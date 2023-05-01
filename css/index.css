@@ -1,0 +1,571 @@
+body{
+    margin: 0;
+    font-family: 'TT Hoves Variable','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif !important;
+}
+.header{
+    position: relative;
+    color: white;   
+}
+nav .nav{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #007e3e;
+    height: 100px;
+}
+
+.logo{
+
+}
+
+.logo img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.mainMenu{
+    width: 50%;
+    font-size: large;
+    font-family: 'Segoe UI', sans-serif;
+}
+.mainMenu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.mainMenu ul li:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.mainMenu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.mainMenu ul li.active{
+    border-bottom: 2px solid black;
+}
+
+.account{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.signIn, .signUp{
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: large;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.signIn{
+    outline: white !important;   
+}
+
+.signUp{
+    background-color: #E1AD01;
+}
+
+.signUp:hover{
+    background-color: #ac8400;
+}
+.signInBtn, .signUpBtn{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+}
+
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Slider typeshit */
+.hero{
+    font-family:"Roboto", Arial, Verdana, Helvetica, sans-serif;
+    height: 70vh;
+    background: url('../images/waterside.webp');
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.heros{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.5);   
+}
+
+.hero .carousel-title{
+    position: absolute;
+    bottom: 2100px;
+    font-size: 80px;
+    z-index: 1;
+}
+
+.hero .taking{
+    position: absolute;
+    bottom: 2200px;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.what-egg-brings{
+    height: 40vh;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.section-header{
+    color: #007e3e;
+    
+}
+
+.section-content{
+    display: flex;
+}
+
+.section-content .feature{
+    border: 1px solid;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: border-radius 0.1s ease-in-out;
+}
+
+.section-content .feature:hover{
+    border-radius: 50px;
+    box-shadow:  2px 2px 20px #006b35,
+             2px 2px 10px #009147;
+}
+
+.feature-icon-container{
+    background-color:hsla(120, 57%, 73%, 0.3);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.section-content .feature .fas{
+    color: #007e3e;
+}
+
+
+.previous-destinations-container{
+    height: 170vh;
+    padding-top: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.previous-destinations{
+    /* padding-left: 1.25rem;
+    padding-right: 1.25rem; */
+    margin-left: 143px;
+    margin-right: 143px;
+    display: flex;
+    flex-direction: column;
+    /* width: 1080px; */
+    height: 100%;
+}
+
+.destination-title{
+    text-align: center;
+}
+
+#previous-p{
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 46px;
+    color: #a4a4a4;
+}
+
+#destinations-p{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 76px;
+}
+
+.destinations{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+    flex-basis: 0 0 33.3333333%;
+}
+
+.firstTwo-destinations, .firstThree-destinations{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mauritius, .singapore{
+    min-height: 1px;
+    height: 500px;
+    width: 49%;
+    background-image: url('../images/focus-photography-mauritius-wVuRAom5v6U-unsplash.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mauritius{
+    background-image: url('../images/mauritius-unsplash.jpg');
+}
+
+.singapore{
+    background-image: url('../images/singapore\ unsplash.jpg');
+}
+
+
+
+.mauritius h2, .singapore h2, .egypt h2, .london h2, .south-africa h2{
+    font-family: "Poppins",Sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 100px;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    margin-left: 10px;
+}
+
+.mauritius-overlay, .singapore-overlay, .egypt-overlay, .london-overlay, .south-africa-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 7, 7, 0.5);   
+    /* opacity: 0.7; */
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 20px;
+    /* transition: height 2s ease-in-out; */
+}
+
+/* .mauritius-overlay:hover, .singapore-overlay:hover{
+    height: 10%;
+} */
+
+.egypt, .london, .south-africa{
+    min-height: 1px;
+    height: 300px;
+    flex-basis: 32.3%;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.egypt{
+    background-image: url('../images/egypt\ unsplash.jpg');
+}
+
+.london{
+    background-image: url('../images/london.jpg');
+}
+
+.south-africa{
+    background-image: url('../images/southafrica-unsplash.jpg');
+}
+
+.egypt h2, .london h2, .south-africa h2{
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.destination-request-booking{
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+
+.dest{
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    overflow: hidden;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+
+.discover{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    /* background-color: #E1AD01; */
+    border: 2px solid #E1AD01;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.discover::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #E1AD01;
+    top: 0;
+    left: 95px;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateX(0);
+    padding: 20px;
+}
+
+
+
+.discover:hover::before{
+    /* top: 0; */
+    width: 100%;
+    height: 100%;
+    transform: translateX(-45%);
+    opacity: 1;
+    border-radius: 0;
+}
+
+
+
+
+.destination-card{
+    height: fit-content;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 40px #bebebe,
+                -10px -10px 20px #ffffff;
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.destination-card:hover{
+    cursor: pointer;
+}
+
+.destinations > div{
+    margin-top: 30px;
+}
+.destination-image{
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.destination-image:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: transform 0.4s;
+}
+
+.next-holiday{
+    height: 130vh;
+    padding: 2%;
+    border-radius: 25px;
+    position: relative;
+}
+
+.holiday{
+    min-height: 70%;
+    background-image: url('../images/tanzania.jpg');
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.holiday h2{
+    font-weight: 900;
+    font-size: 90px;
+    margin-bottom: 0;
+}
+
+.holiday .packages-link{
+    text-decoration: none;
+    border: 2px solid black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.holiday .packages-link::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 80px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.holiday .packages-link:hover::before{
+    width: 100%;
+    height: 100%;
+    transform: translateX(48%);
+    border-radius: 25px;
+    transition: all 0.4s ease;
+    opacity: 1;
+}
+
+.packages-link:hover{
+    color: black;
+}
+
+.travel-with-us{
+    position: absolute;
+    background-image: url('../images/surfer-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 30%;
+    border-radius: 25px;
+    left: 210px;
+    top: 600px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.travel-with-us .header{
+    color: black;
+}
+
+.travel-with-us .header h3{
+    font-size: 70px;
+    margin: 0;
+}
+
+.travel-with-us .header h4{
+    font-size: 30px;
+    margin: 0;
+}
+
+.travel-with-us .email-address{
+    width: 50%;
+    position: relative;
+}
+
+.travel-with-us .email-address input{
+    border-radius: 25px;
+    padding: 25px;
+    outline: none;
+    border: none;
+    width: 70%;
+}
+
+.travel-with-us .email-address a{
+    text-decoration: none;
+    background-color: #00b9f3;
+    padding: 22px;
+    border-radius: 25px;
+    position: absolute;
+    right: 140px;
+}
+
+
+.footer{
+    height: 40vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,126,62,1) 81%, rgba(255,255,255,1) 100%);
+}
+
+.footer-container{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    padding: 0px 90px;
+    height: 100%;
+}
+
+.footer-menu-item ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-menu-item ul li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.footer-menu-item ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-menu-item ul li a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "image": "../images/mauritius.jpg",
+        "country": "Mauritius"
+    },
+    {
+        "image": "../images/turkey.jpg",
+        "country": "Turkey"
+    },
+    {
+        "image": "../images/egypt.jpg",
+        "country": "Egypt"
+    },
+    {
+        "image": "../images/mauritius.jpg",
+        "country": "Nigeria"
+    },
+    {
+        "image": "../images/sweden.jpg",
+        "country": "Sweden"
+    },
+    {
+        "image": "../images/south-africa.jpg",
+        "country": "South Africa"
+    }
+]

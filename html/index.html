@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="https://content.r9cdn.net/res/css/font/tt-hoves/tt-hoves-variable.woff2?v=8664191c7b8cab2e3fc042680118a009031da15d&cluster=5" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>EGG Global </title>
+    <div class="header">
+        <nav>
+            <div class="nav">
+                <div class="logo">
+                    <img src="../images/Eg global.jpg" alt="">
+                </div>
+                <div class="mainMenu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                        <li><a href="./destinations.html">Destinations</a></li>
+                    </ul>
+                </div>
+                <div class="account">
+                    <!-- <div class="signIn">
+                        <a href="" class="signInBtn">Sign In</a>
+                    </div> -->
+                    <div class="signUp">
+                        <a href="" class="signUpBtn">REQUEST A BOOKING</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1070 65" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+    <script src="../js/explore-window.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?68910';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"EG Global Travel",
+      "brandSubTitle":"Typically replies within a day",
+      "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about {{page_link}}",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"2348064520518"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+<body>
+    <section class="hero">
+        <h2 class="carousel-title">EG GLOBAL SERVICE</h2>
+        <p class="taking">Taking you to your destinations!</p>
+        <div class="heros"></div>
+    </section>
+    <section class="what-egg-brings">
+        <div class="section-header">
+            <h2>What Eg Global Services Brings To The Table</h2>
+        </div>
+        <div class="section-content">
+            <div class="feature">
+                <div class="feature-icon-container">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <h3>Great Deals</h3>
+                <p>Get the best packages with us</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon-container">
+                    <i class="fas fa-sync"></i>
+                </div>
+                <h3>Book With Flexibility</h3>
+                <p>You will have no hassle booking and preparing your flights with us</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon-container">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h3>Track your prices</h3>
+                <p>You can Contact us to get alerts for when prices drop</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon-container">
+                    <i class="fas fa-map-marker"></i>
+                </div>
+                <h3>Pocket Friendly Flights</h3>
+            </div>
+        </div>
+    </section>
+    <section class="previous-destinations-container">
+        <div class="previous-destinations">
+            <div class="destination-title">
+                <div class="top-destination-title">
+                    <h3 id="previous-p">Popular Destinations</h3>
+                    <h2 id="destinations-p"><strong>Top</strong> Destinations</h3>
+                </div>
+            </div>
+            <div class="destinations" id="travel-destinations">
+                <div class="firstTwo-destinations">
+                    <div class="mauritius" id="mauritius">
+                        <div class="mauritius-overlay">
+                        </div>
+                        <h2>Mauritius</h2>
+                    </div>
+                    <div class="singapore">
+                        <div class="singapore-overlay">
+                        </div>
+                        <h2>Singapore</h2>
+                    </div>
+                </div>
+                <div class="firstThree-destinations">
+                    <div class="egypt">
+                        <div class="egypt-overlay"></div>
+                        <h2>Egypt</h2>
+                    </div>
+                    <div class="london">
+                        <div class="london-overlay"></div>
+                        <h2>London</h2>
+                    </div>
+                    <div class="south-africa">
+                        <div class="south-africa-overlay"></div>
+                        <h2>South Africa</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-request-booking">
+                <div class="dest">
+                    <a href="request-booking.html" class="discover">Discover</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="next-holiday">
+        <div class="holiday">
+            <h2>Your Next Holiday</h2>
+            <a href="" class="packages-link">View All Packages</a>
+        </div>
+        <div class="travel-with-us">
+            <div class="header">
+                <h4>KEEP IN TOUCH</h4>
+                <h3>TRAVEL WITH US</h3>
+            </div>
+            <div class="email-address">
+                <input type="email" name="" id="">
+                <a href="">Send</a>
+            </div>
+            <div class="travel-with-us-overlay"></div>
+        </div>
+    </section>
+    
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-menu-item">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Countries</a></li>
+                    <li><a href="#">Regions</a></li>
+                    <li><a href="#">Cities</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu-item">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Help/FAQ</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Advertise with us</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu-item">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">General Conditions</a></li>
+                    <li><a href="#">Who we are</a></li>
+                </ul>
+            </div>
+          
+        </div>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>
