@@ -111,9 +111,3 @@ southAfrica[0].addEventListener("mouseout", ()=> {
 })
 
 
-const discoverButton = document.getElementsByClassName("discover");
-console.log(discoverButton[0])
-discoverButton[0].addEventListener("mouseover", ()=> {
-    
-})
-
