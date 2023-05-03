@@ -493,7 +493,7 @@ nav .nav{
     background-image: url('../images/surfer-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 75%;
+    width: 1180px;
     height: 30%;
     border-radius: 25px;
     left: 250px;
@@ -529,7 +529,7 @@ nav .nav{
     padding: 25px;
     outline: none;
     border: none;
-    width: 70%;
+    width: 400px;
 }
 
 .travel-with-us .email-address a{
