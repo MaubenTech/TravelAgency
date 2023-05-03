@@ -559,7 +559,6 @@ nav .nav{
 
 .footer{
     height: 40vh;
-    background: rgb(2,0,36);
     background: linear-gradient(90deg, rgb(32, 32, 32) 0%, rgba(0,126,62,1) 20%, rgba(0,126,62,1) 80%, rgb(32, 32, 32) 100%);
 }
 
