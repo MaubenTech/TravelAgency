@@ -427,7 +427,7 @@ nav .nav{
 }
 
 .holiday{
-    min-height: 70%;
+    min-height: 60%;
     background-image: url('../images/tanzania.jpg');
     object-fit: cover;
     background-size: cover;
@@ -440,12 +440,25 @@ nav .nav{
     justify-content: center;
     align-items: center;
     color: white;
+    position: relative;
 }
+
+.next-holiday-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.5);  
+    border-radius: 25px;
+}
+
+
+
 
 .holiday h2{
     font-weight: 900;
     font-size: 90px;
     margin-bottom: 0;
+    z-index: 1;
 }
 
 .holiday .packages-link{
@@ -493,17 +506,19 @@ nav .nav{
     background-image: url('../images/surfer-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1180px;
+    width: 1050px;
     height: 30%;
     border-radius: 25px;
     left: 250px;
-    top: 600px;
+    top: 500px;
     z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
 }
+
+
 
 .travel-with-us .header{
     color: black;
@@ -520,7 +535,7 @@ nav .nav{
 }
 
 .travel-with-us .email-address{
-    width: 50%;
+    width: 500px;
     position: relative;
 }
 
@@ -529,7 +544,7 @@ nav .nav{
     padding: 25px;
     outline: none;
     border: none;
-    width: 400px;
+    width: 350px;
 }
 
 .travel-with-us .email-address a{
@@ -538,14 +553,14 @@ nav .nav{
     padding: 22px;
     border-radius: 25px;
     position: absolute;
-    right: 125px;
+    right: 75px;
 }
 
 
 .footer{
     height: 40vh;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,126,62,1) 81%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(0,126,62,1) 100%, rgba(255,255,255,1) 20%);
 }
 
 .footer-container{
