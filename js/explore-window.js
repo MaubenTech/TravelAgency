@@ -8,6 +8,8 @@ $(document).ready(()=> {
     // })
     $('.side-menu-items').mouseover(()=> {
         $('.explore-side-menu').toggleClass("burger-toggle");  
+    }).mouseout(()=> {
+        $('.explore-side-menu').removeClass("burger-toggle");
     })
 })
 
