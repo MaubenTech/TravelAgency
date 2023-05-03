@@ -119,10 +119,11 @@ nav .nav{
 /* Slider typeshit */
 .hero{
     font-family:"Roboto", Arial, Verdana, Helvetica, sans-serif;
-    height: 100vh;
-    background: url('../images/waterside.webp');
-    background-size: contain;
-    /* background-repeat: no-repeat; */
+    height: 90vh;
+    /* background: url('../images/waterside.webp'); */
+    background: url('../images/kirk-schwarz-scbK_16hNdg-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
