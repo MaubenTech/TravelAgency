@@ -544,7 +544,7 @@ nav .nav{
     padding: 25px;
     outline: none;
     border: none;
-    width: 350px;
+    width: 350px;  
 }
 
 .travel-with-us .email-address a{
@@ -560,7 +560,7 @@ nav .nav{
 .footer{
     height: 40vh;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(32, 32, 32) 0%, rgba(0,126,62,1) 20%, rgba(0,126,62,1) 80%, rgb(32, 32, 32) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,126,62,1) 81%, rgba(255,255,255,1) 100%);
 }
 
 .footer-container{
