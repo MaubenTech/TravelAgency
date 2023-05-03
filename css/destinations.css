@@ -19,7 +19,6 @@
 }
 
 .explore-side-menu.burger-toggle{
-    
     display: flex;
     flex-direction: column;
     width: 30%;
