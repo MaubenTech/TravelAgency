@@ -119,13 +119,14 @@ nav .nav{
 /* Slider typeshit */
 .hero{
     font-family:"Roboto", Arial, Verdana, Helvetica, sans-serif;
-    height: 80vh;
+    height: 100vh;
     background: url('../images/waterside.webp');
     background-size: contain;
     /* background-repeat: no-repeat; */
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     color: white;
     text-align: center;
     position: relative;
