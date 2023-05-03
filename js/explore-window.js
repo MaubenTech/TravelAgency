@@ -6,7 +6,7 @@ $(document).ready(()=> {
         $('.explore-side-menu').toggleClass("burger-toggle");
         // $('.explore-side-menu').css("justify-content", "center");
     })
-    $('.item').mouseover(()=> {
+    $('.side-menu-items').mouseover(()=> {
         $('.explore-side-menu').toggleClass("burger-toggle");  
     })
 })
