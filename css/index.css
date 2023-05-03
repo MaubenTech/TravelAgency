@@ -493,10 +493,10 @@ nav .nav{
     background-image: url('../images/surfer-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 80%;
+    width: 75%;
     height: 30%;
     border-radius: 25px;
-    left: 210px;
+    left: 250px;
     top: 600px;
     z-index: 1;
     display: flex;
@@ -538,7 +538,7 @@ nav .nav{
     padding: 22px;
     border-radius: 25px;
     position: absolute;
-    right: 130px;
+    right: 125px;
 }
 
 
