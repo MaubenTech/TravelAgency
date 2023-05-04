@@ -7,6 +7,7 @@
     <link rel="preload" href="https://content.r9cdn.net/res/css/font/tt-hoves/tt-hoves-variable.woff2?v=8664191c7b8cab2e3fc042680118a009031da15d&cluster=5" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <title>EGG Global </title>
     <div class="header">
@@ -80,8 +81,27 @@
 </script>
 <body>
     <section class="hero">
-        <h2 class="carousel-title">EG GLOBAL SERVICE</h2>
-        <p class="taking">Taking you to your destinations!</p>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2 class="carousel-title">EG GLOBAL SERVICE</h2>
+                    <p class="taking">Taking you to your destinations!</p>
+                    <img src="../images/kirk-schwarz-scbK_16hNdg-unsplash.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="carousel-title">EG GLOBAL SERVICE</h2>
+                    <p class="taking">Taking you to your destinations!</p>
+                    <img src="../images/focus-photography-mauritius-wVuRAom5v6U-unsplash.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="carousel-title">EG GLOBAL SERVICE</h2>
+                    <p class="taking">Taking you to your destinations!</p>
+                    <img src="../images/hero-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
         <div class="heros"></div>
     </section>
     <section class="what-egg-brings">
@@ -212,6 +232,8 @@
           
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/slider.js"></script>
     <script src="../js/index.js"></script>
 </body>
 </html>
