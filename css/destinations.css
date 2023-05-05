@@ -95,6 +95,75 @@
     width: 100%;
 }
 
+.departure-form{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: left;
+}
+
+.origin, .destination, .date{
+    margin-right: 10px;
+}
+
+.departure-form .origin{
+    position: relative;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.departure-form .icon-container{
+    display: grid;
+    place-items: center;
+}
+
+.departure-form .origin .fas{
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+.departure-form .origin .smartform-origin{
+    width: 100%;
+    margin-left: 50px;
+}
+
+
+.departure-form .origin, .departure-form .destination, .departure-form .date input{
+    padding: 15px;
+    background-color: whitesmoke;
+    outline: none;
+    border: none;
+}
+
+.departure-form .destination{
+    position: relative;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.departure-form .destination .smartform-destination{
+    width: 100%;
+    margin-left: 50px;
+}
+
+.departure-form .destination .fa-solid{
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+.departure-form .date{
+    width: 20%;
+}
+
+.departure-form .date input{
+    width: 100%;
+}
+
 .map{
     width: 100%;
 }
