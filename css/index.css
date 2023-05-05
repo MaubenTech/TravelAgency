@@ -194,7 +194,10 @@ nav .nav{
 }
 
 .section-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+
 }
 
 .section-content .feature{
@@ -225,7 +228,7 @@ nav .nav{
 .previous-destinations-container{
     height: 1250px;
     padding-top: 10px;
-    margin-top: 20px;
+    margin-top: 60px;
     width: 100%;
 }
 

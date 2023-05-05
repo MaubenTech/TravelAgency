@@ -1,5 +1,5 @@
 .explore{
-    height: 90vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
 }
@@ -100,7 +100,9 @@
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
-    justify-content: left;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
 }
 
 .origin, .destination, .date{
@@ -112,6 +114,7 @@
     display: flex;
     width: 30%;
     justify-content: space-around;
+    margin-left: 15px;
 }
 
 .departure-form .icon-container{
@@ -128,6 +131,7 @@
 .departure-form .origin .smartform-origin{
     width: 100%;
     margin-left: 50px;
+    outline: none;
 }
 
 
@@ -148,6 +152,7 @@
 .departure-form .destination .smartform-destination{
     width: 100%;
     margin-left: 50px;
+    outline: none;
 }
 
 .departure-form .destination .fa-solid{
@@ -162,6 +167,48 @@
 
 .departure-form .date input{
     width: 100%;
+    padding: 17px;
+}
+
+.search-wrapper{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #007e3e;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.search{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 30px;
+    display: grid;
+    place-items: center;
+}
+
+.search .search-circle{
+    width: 15px;
+    height: 15px;
+    border: 4px solid whitesmoke;
+    border-radius: 100%;
+}
+
+.search .search-rectangle{
+    position: absolute;
+    right: 15px;
+    bottom: 4px;
+    width: 6px;
+    transform: rotate(45deg);
+    border: 3px solid whitesmoke;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .map{
@@ -170,4 +217,48 @@
 
 .map iframe{
     width: 100%;
+}
+.places-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: blue; */
+    padding: 10px;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin: 7% 7%;
+}
+
+.places{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 290px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.places .place-image{
+    height: 90%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.sweden{
+    background-image: url('../images/sweden.jpg');
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    bac
+}
+
+.country{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.country span{
+    font-weight: bold;
 }
