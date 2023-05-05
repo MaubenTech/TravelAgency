@@ -135,11 +135,6 @@ nav .nav{
 
 .swiper{
     height: 100% !important;
-    /* z-index: 0 !important; */
-}
-
-.swiper-wrapper{
-    /* z-index: 0 !important; */
 }
 
 .swiper-slide{
@@ -188,7 +183,6 @@ nav .nav{
     background-color: rgba(7, 7, 7, 0.7);
 }
 
-
 .what-egg-brings{
     height: 40vh;
     margin-left: 7%;
@@ -197,7 +191,6 @@ nav .nav{
 
 .section-header{
     color: #007e3e;
-    
 }
 
 .section-content{
@@ -215,8 +208,7 @@ nav .nav{
 
 .section-content .feature:hover{
     border-radius: 50px;
-    box-shadow:  2px 2px 20px #006b35,
-             2px 2px 10px #009147;
+    box-shadow:  2px 2px 20px #006b35, 2px 2px 10px #009147;
 }
 
 .feature-icon-container{
@@ -229,7 +221,6 @@ nav .nav{
 .section-content .feature .fas{
     color: #007e3e;
 }
-
 
 .previous-destinations-container{
     height: 1250px;
@@ -302,8 +293,6 @@ nav .nav{
     background-image: url('../images/singapore\ unsplash.jpg');
 }
 
-
-
 .mauritius h2, .singapore h2, .egypt h2, .london h2, .south-africa h2{
     font-family: "Poppins",Sans-serif;
     font-size: 70px;
@@ -366,7 +355,6 @@ nav .nav{
     height: 100%;
 }
 
-
 .dest{
     position: relative;
     z-index: 1;
@@ -376,7 +364,6 @@ nav .nav{
     display: grid;
     place-items: center;
 }
-
 
 .discover{
     text-decoration: none;
@@ -409,8 +396,6 @@ nav .nav{
     padding: 20px;
 }
 
-
-
 .discover:hover::before{
     /* top: 0; */
     width: 100%;
@@ -419,9 +404,6 @@ nav .nav{
     opacity: 1;
     border-radius: 0;
 }
-
-
-
 
 .destination-card{
     height: fit-content;
@@ -484,9 +466,6 @@ nav .nav{
     background-color: rgba(7, 7, 7, 0.5);  
     border-radius: 25px;
 }
-
-
-
 
 .holiday h2{
     font-weight: 900;
@@ -587,7 +566,6 @@ nav .nav{
     position: absolute;
     right: 75px;
 }
-
 
 .footer{
     height: 40vh;
