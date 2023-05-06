@@ -1,19 +1,23 @@
 [
     {
+        "image": "../images/sweden.jpg",
+        "country": "Sweden",
+        "countryDetails": "Process from 150k"
+    },
+    {
+        "image": "../images/egyptj.jpg",
+        "country": "Egypt Visa",
+        "countryDetails": "Sold Out"
+    },
+    {
+        "image": "../images/jordan.jpg",
+        "country": "Jordan",
+        "countryDetails": "Jordan E-VISA"
+    },
+    {
         "image": "../images/mauritius.jpg",
-        "country": "Mauritius"
-    },
-    {
-        "image": "../images/turkey.jpg",
-        "country": "Turkey"
-    },
-    {
-        "image": "../images/egypt.jpg",
-        "country": "Egypt"
-    },
-    {
-        "image": "../images/mauritius.jpg",
-        "country": "Nigeria"
+        "country": "Mauritius",
+        "countryDetails": ""
     },
     {
         "image": "../images/sweden.jpg",
