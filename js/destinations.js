@@ -73,12 +73,8 @@ function displayJsonData(data){
     }
 }
 
-requestBooking = document.getElementById('requestBooking');
-requestBooking.click(()=> {
-    
-})
-
 origin = document.getElementById('origin');
 $(origin).click(()=> {
 
 })
+
