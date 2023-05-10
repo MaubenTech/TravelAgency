@@ -76,6 +76,8 @@ nav .nav{
 }
 
 .signIn, .signUp{
+    position: relative;
+    z-index: 1;
     background: transparent;
     color: white;
     text-decoration: none;
@@ -580,12 +582,32 @@ nav .nav{
     width: 100%;
     height: 100%;
     justify-content: center;
-    /* display: none; */
-    display: flex;
+    display: none;
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    background-color: #00000070;
+    padding: 0;
+    margin: 0;
+    
 }
 
 .booking-form{
     display: flex;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+
     width: 800px;
     height: 400px;  
     margin-bottom: 10px;

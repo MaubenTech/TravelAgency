@@ -67,9 +67,9 @@ southAfrica[0].addEventListener("mouseout", ()=> {
 
 
 
-requestBooking = document.getElementById('requestBooking');
-console.log(requestBooking)
+requestBooking = $('#requestBooking');
 requestBooking.click(()=> {
-    $('.form-section').css("display", "flex")
-    $('.form-section').css("position", "absolute")
+    $('body').css({"height":"100vh", "overflow": "hidden"});
+    $('section:not(.form-section)').css({"filter": "blur(10px)"});
+    $('.form-section').css({"display": "flex"});
 })
