@@ -14,27 +14,6 @@ $(document).ready(function(){
 })
 
 
-function displayJsonData(data){
-    var places = document.getElementById('places-container');
-    for(var i = 0; i < data.length; i++){
-        var places = document.createElement('div');
-        places.classList.add('places');
-        places.innerHTML = 
-            // '<img class="destination-image" src="' + data[i].image + '" alt="">' +
-            // '<h4 class="destination">' + data[i].country + '</h4>'
-            '<div class="places"> ' + 
-                '<div class="place-image sweden"> ' + 
-                    '<img class="explore-place-image" src="' + data[i].image + 'alt="">' + 
-                '</div>' + 
-                '<div class="country">' + 
-                    '<h3>' + data[i].country + '</h3>'
-                    '<span>' + data[i].countryDetails + '</span>'
-                '</div>'
-            '</div>'
-    
-        destinations.appendChild(destination)
-    }
-}
 
 const mauritius = document.getElementsByClassName("mauritius");
 const singapore = document.getElementsByClassName("singapore");
@@ -83,5 +62,7 @@ southAfrica[0].addEventListener("mouseover", ()=> {
 southAfrica[0].addEventListener("mouseout", ()=> {
     reverseDestinationOverlay(".south-africa-overlay")
 })
+
+
 
 

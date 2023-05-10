@@ -21,10 +21,12 @@
     },
     {
         "image": "../images/sweden.jpg",
-        "country": "Sweden"
+        "country": "Sweden",
+        "countryDetails": ""
     },
     {
         "image": "../images/south-africa.jpg",
-        "country": "South Africa"
+        "country": "South Africa",
+        "countryDetails": ""
     }
 ]
