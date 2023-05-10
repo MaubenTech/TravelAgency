@@ -28,18 +28,32 @@
 
 const destinationUrl = '../js/destinations.json'
 
-fetch(destinationUrl).then((response)=> {
+console.log(destinationUrl)
+
+fetch(destinationUrl, {
+    method: 'GET',
+    headers: {
+        'Accept': 'application/json',
+    },
+}).then((response)=> {
     return response.json();
 }).then((response)=> {
-    console.log(response)
+    console.log(response);
+    //getting the first three objects in the array;
+    let slicedResponse = response.slice(0, 3);
+    console.log(slicedResponse.length);
     displayJsonData(response)
 }).catch((error)=> {
     console.log(error);
 })
 
+
+
 function displayJsonData(data){
     var places = document.getElementById('places-container');
-    for(var i = 0; i < data.length; i++){
+    let slicedData = data.slice(0, 6);
+    for(var i = 0; i < slicedData.length; i++){
+        console.log(slicedData[i].countryDetails);
         var place = document.createElement('div');
         place.classList.add('places');
         place.innerHTML = 
@@ -50,11 +64,17 @@ function displayJsonData(data){
                     '<img class="explore-place-image" src="' + data[i].image + '"alt="">' + 
                 '</div>' + 
                 '<div class="country">' + 
-                    '<h3>' + data[i].country + '</h3>'
-                    '<span>' + data[i].countryDetails + '</span>'
+                    '<h3>' + slicedData[i].country + '</h3>'
+                    '<span>' + slicedData[i].countryDetails + '</span>'
                 '</div>'
             '</div>'
     
         places.appendChild(place)
     }
 }
+
+origin = document.getElementById('origin');
+$(origin).click(()=> {
+
+})
+

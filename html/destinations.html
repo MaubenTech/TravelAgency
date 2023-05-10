@@ -5,43 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="https://content.r9cdn.net/res/css/font/tt-hoves/tt-hoves-variable.woff2?v=8664191c7b8cab2e3fc042680118a009031da15d&cluster=5" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/destinations.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../assets/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="/css/destinations.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-6.4.0-web/css/all.css">
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="/js/footer.js"></script>
     <title>EGG Global </title>
-    <div class="header">
-        <nav>
-            <div class="nav">
-                <div class="logo">
-                    <img src="../images/Eg global.jpg" alt="">
-                </div>
-                <div class="mainMenu">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Photo Gallery</a></li>
-                        <li><a href="./destinations.html">Destinations</a></li>
-                    </ul>
-                </div>
-                <div class="account">
-                    <!-- <div class="signIn">
-                        <a href="" class="signInBtn">Sign In</a>
-                    </div> -->
-                    <div class="signUp">
-                        <a href="" class="signUpBtn">REQUEST A BOOKING</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="wave">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1070 65" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
-        </div>
-    </div>
     <script src="../js/explore-window.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <my-header></my-header>
 </head>
 <body>
     <section class="explore">
@@ -89,10 +61,13 @@
             </div>
             <div class="explore-content">
                 <div class="departure-form">
-                    <div class="origin">
+                    <div class="origin" id="origin">
                         <div contenteditable="true" class="smartform-origin">Lagos</div>
                         <div class="icon-container">
                             <i class="fas fa-plane-departure fa-2x"></i>
+                        </div>
+                        <div class="origin-form">
+                            <div></div>
                         </div>
                     </div>
                     <div class="destination">
@@ -118,9 +93,14 @@
                     <div class="places-container" id="places-container">
                     </div>
                 </div>
+                <div class="loadmore">
+                    <a href="http://">Load More Destinations</a>
+                </div>
             </div>
         </div>
     </section>
+    <my-footer></my-footer>
     <script src="../js/destinations.js"></script>
+    <script src="/js/header.js"></script>
 </body>
 </html>

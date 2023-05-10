@@ -1,3 +1,7 @@
+body{
+    font-family: sans-serif;
+}
+
 .explore{
     height: fit-content;
     display: flex;
@@ -93,6 +97,7 @@
 
 .explore-content{
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .departure-form{
@@ -245,7 +250,7 @@
     height: 250px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    border-bottom: 1px groove rgb(211, 209, 209);
+    border-bottom: 4px groove #068341;
 }
 
 
@@ -268,4 +273,22 @@
 
 .country span{
     font-weight: bold;
+}
+
+.loadmore{
+    display: grid;
+    place-items: center;
+}
+
+.loadmore a{
+    padding: 25px;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    background-color: #E1AD01;
+    border-radius: 10px;
+}
+
+.loadmore a:hover{
+    background-color: #947205;
 }
