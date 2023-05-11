@@ -22,6 +22,7 @@ const london = document.getElementsByClassName("london");
 const southAfrica = document.getElementsByClassName("south-africa");
 
 function destinationOverlay(element){
+    console.log(element);
     $(element).css("height", "0%");
     $(element).css("transition", "height 0.5s ease-in-out");
 
@@ -73,3 +74,24 @@ requestBooking.click(()=> {
     $('section:not(.form-section), .header').css({"filter": "blur(5px)"});
     $('.form-section').css({"display": "flex"});
 })
+
+function turnCancelButtontoGood(element){
+    console.log(element)
+    var $this = $(element).parent();
+    $this.toggleClass('canceled');
+    return false;
+}
+
+
+$('.exit-button').on('click', function(event) {
+    event.preventDefault();
+    turnCancelButtontoGood(".exit-button");
+    if($(this).parent().hasClass('canceled')){
+        $('.form-section').css({"display": "none", "transition" : "all 1s ease-in-out"})
+        $('body').css({"overflow" : "visible"})
+        $('section:not(.form-section), .header').css({"filter" : "none"})
+    }
+})
+
+
+
