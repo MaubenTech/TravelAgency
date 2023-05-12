@@ -87,8 +87,8 @@ $('.exit-button').on('click', function(event) {
     event.preventDefault();
     turnCancelButtontoGood(".exit-button");
     if($(this).parent().hasClass('canceled')){
-        $('.form-section').css({"display": "none", "transition" : "all 1s ease-in-out"})
         $('body').css({"overflow" : "visible"})
+        $('.form-section').css({"display": "none", "transition" : "all 1s ease-in-out"})
         $('section:not(.form-section), .header').css({"filter" : "none"})
     }
 })
