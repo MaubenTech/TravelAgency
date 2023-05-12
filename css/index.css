@@ -683,14 +683,11 @@ nav .nav{
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 2px;
 }
 
-.booking-form .right-pane .detail .detail-icon-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 1px;
+.booking-form .right-pane .detail:not(#gender-detail):not(#custom-select-detail) {
+    border: 1px solid #000;
 }
 
 .booking-form .right-pane .detail .fa-solid{
@@ -702,10 +699,7 @@ nav .nav{
 .booking-form .right-pane .detail input{
     padding: 4.2px;
     outline: none;
-}
-
-.booking-form .right-pane .detail input::placeholder{
-    text-align: center;
+    border: none;
 }
 
 #gender-detail{

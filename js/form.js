@@ -74,7 +74,7 @@ class Form extends HTMLElement{
                             <div class="detail-identifier">
                                 <label for="enquiries">Enquiries: </label>
                             </div>
-                            <div class="detail">
+                            <div class="detail" id="custom-select-detail">
                                 <div class="custom-select" style="width: 250px;">
                                     <select name="form-options" id="form-options">
                                         <option value="What are you enquiring about? ">What are you enquiring about?</option>
