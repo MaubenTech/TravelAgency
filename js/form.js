@@ -129,7 +129,7 @@ for(i = 0; i < customSelect.length; i++){
         eachOption = document.createElement("div");
         eachOption.innerHTML = selectMenu.options[j].innerHTML;
         console.log(eachOption);
-        
+
         eachOption.addEventListener("click", function(event){
             //when an option is clicked, update the original selected box and the
             //selected item
@@ -193,3 +193,5 @@ function closeAllSelect(element){
 var bookingForm = document.getElementById("booking-form")
 console.log(bookingForm);
 bookingForm.addEventListener("click", closeAllSelect);
+
+function 
