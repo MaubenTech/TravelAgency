@@ -9,7 +9,7 @@ class Form extends HTMLElement{
         `
             <section class="form-section">
                 <!-- <div class="blur"></div> -->
-                <form class="booking-form" id="booking-form">
+                <form class="booking-form" id="booking-form" method="post">
                     <div class="left-pane">
                         <img src="/images/Eg global.jpg" alt="">
                     </div>
@@ -194,4 +194,22 @@ var bookingForm = document.getElementById("booking-form")
 console.log(bookingForm);
 bookingForm.addEventListener("click", closeAllSelect);
 
-function 
+function sendEmail(){
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "noahvikoo3@gmail.com",
+        Password: "Burabari1@",
+        To: "onyecherebenedict@gmail.com",
+        From: "noahvikoo3@gmail.com",
+        Subject: "Your Enquiries For Traveling With us at Eg Global Services",
+        Body: "Get out of this Country!",
+    })
+    .then((message)=> {
+        alert("We will contact shortly");
+    })
+}
+
+submitForm = document.getElementsByClassName('form-submit-btn')[0];
+submitForm.addEventListener("click", ()=> {
+    sendEmail();
+})

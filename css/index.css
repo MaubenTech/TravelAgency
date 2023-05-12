@@ -209,7 +209,7 @@ nav .nav{
 
 .ft1{
     margin-left: 42%;
-    width: 362.812px;
+    /* width: 362.82%; */
 }
 
 #ft2{
@@ -682,12 +682,15 @@ nav .nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .booking-form .right-pane .detail .detail-icon-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 0;
 }
 
 .booking-form .right-pane .detail .fa-solid{
@@ -699,7 +702,12 @@ nav .nav{
 }
 
 .booking-form .right-pane .detail input{
-    padding: 5px;
+    padding: 4.2px;
+    outline: none;
+}
+
+.booking-form .right-pane .detail input::placeholder{
+    text-align: center;
 }
 
 #gender-detail{

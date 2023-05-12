@@ -90,7 +90,7 @@ $('.exit-button').on('click', function(event) {
         setTimeout(()=> {
             $('body').css({"overflow" : "visible"})
             $('.form-section').css({"display": "none", "transition" : "all 1s ease-in-out"})
-            $('section:not(.form-section), .header').css({"filter" : "none"});
+                $('section:not(.form-section), .header').css({"filter" : "none"});
             event.currentTarget.parentElement.classList.remove('canceled');
         }, 500)
         console.log(event.currentTarget.parentElement);
