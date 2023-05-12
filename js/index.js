@@ -83,15 +83,15 @@ function turnCancelButtontoGood(element){
 }
 
 
-$('.exit-button').on('click', function(event) {
+$('.exit-button-container').on('click', function(event) {
     event.preventDefault();
     turnCancelButtontoGood(".exit-button");
-    if($(this).parent().hasClass('canceled')){
+    if($(this).hasClass('canceled')){
         setTimeout(()=> {
             $('body').css({"overflow" : "visible"})
             $('.form-section').css({"display": "none", "transition" : "all 1s ease-in-out"})
-                $('section:not(.form-section), .header').css({"filter" : "none"});
-            event.currentTarget.parentElement.classList.remove('canceled');
+            $('section:not(.form-section), .header').css({"filter" : "none"});
+            event.currentTarget.classList.remove('canceled');
         }, 500)
         console.log(event.currentTarget.parentElement);
     }
