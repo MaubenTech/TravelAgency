@@ -194,22 +194,26 @@ var bookingForm = document.getElementById("booking-form")
 console.log(bookingForm);
 bookingForm.addEventListener("click", closeAllSelect);
 
+
+
 function sendEmail(){
+
+    recipientEmail = document.getElementById("email").value;
+    console.log(recipientEmail);
     Email.send({
-        Host: "smtp.gmail.com",
-        Username: "noahvikoo3@gmail.com",
-        Password: "Burabari1@",
-        To: "onyecherebenedict@gmail.com",
-        From: "noahvikoo3@gmail.com",
+        SecureToken: "9bf98f2b-894d-48d5-87e7-03e2182c7310",
+        To: recipientEmail,
+        From: "maubentech@gmail.com",
         Subject: "Your Enquiries For Traveling With us at Eg Global Services",
-        Body: "Get out of this Country!",
+        Body: "Bitch the mail workssssssss",
     })
     .then((message)=> {
-        alert("We will contact shortly");
+        alert(message);
     })
 }
 
 submitForm = document.getElementsByClassName('form-submit-btn')[0];
-submitForm.addEventListener("click", ()=> {
+submitForm.addEventListener("click", (event)=> {
+    event.preventDefault();
     sendEmail();
 })

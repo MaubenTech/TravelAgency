@@ -6,6 +6,12 @@ body{
 .header{
     position: relative;
     color: white;   
+    display: flex;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
 }
 nav .nav{
     padding: 2%;
@@ -14,6 +20,7 @@ nav .nav{
     justify-content: space-around;
     background-color: #05833F;
     height: 100px;
+    width: 100%;
 }
 
 .logo{
@@ -69,6 +76,8 @@ nav .nav{
     outline: none;
     border: none;
     cursor: pointer;
+    height: 100%;
+    text-align: center;
 }
 
 #requestBooking:hover{
@@ -86,9 +95,13 @@ nav .nav{
     font-size: large;
     width: 40%;
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     cursor: pointer;
     outline: none;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .signIn{
@@ -208,8 +221,8 @@ nav .nav{
 }
 
 .ft1{
-    margin-left: 42%;
-    /* width: 362.82%; */
+    margin-left: 35%;
+    width: 362.82px !important;
 }
 
 #ft2{
@@ -572,10 +585,11 @@ nav .nav{
 
 .travel-with-us .email-address input{
     border-radius: 25px;
-    padding: 25px;
+    padding: 20px;
     outline: none;
     border: none;
-    width: 350px;  
+    width: 350px;
+    font-size: large;  
 }
 
 .travel-with-us .email-address a{
@@ -680,10 +694,11 @@ nav .nav{
 
 .booking-form .right-pane .detail{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     padding: 2px;
+    width: 50%;
 }
 
 .booking-form .right-pane .detail:not(#gender-detail):not(#custom-select-detail) {
