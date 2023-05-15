@@ -76,7 +76,7 @@ requestBooking.click(()=> {
 })
 
 function turnCancelButtontoGood(element){
-    console.log(element)
+    console.log(element);
     var $this = $(element).parent();
     $this.toggleClass('canceled');
     return false;
