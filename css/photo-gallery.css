@@ -24,12 +24,19 @@ main .gallery-list{
 
 .gallery-list > li > figure{
     height: 100%;
+    margin: 20;
 }
 
 .gallery-list > li > figure > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+
+.gallery-list > li > figure > img:hover{
+    transform: scale(0.8);
 }
 
 .modal-slideshow{

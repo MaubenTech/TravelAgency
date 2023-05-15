@@ -14,14 +14,15 @@ function displayPhotos(data){
         console.log(figure);
         var img = document.createElement('img');
         img.classList.add('photo');
+        img.src = data[i].image;
         figure.appendChild(img)
         console.log(img);
-        li.innerHTML = 
-        `
-            <figure>
-                <img src="${data[i].image}"/>
-            </figure>
-        `;
+        // li.innerHTML = 
+        // `
+        //     <figure>
+        //         <img src="${data[i].image}"/>
+        //     </figure>
+        // `;
 
         photoList.appendChild(li);
     }
@@ -38,6 +39,30 @@ fetch(photoJson, {
     console.log(response);
     displayPhotos(response);
 }).catch(error => console.log(error));
+
+
+var modal = document.getElementById('modal-slideshow');
+var images = document.getElementsByClassName('photo');
+
+window.addEventListener('load', function(){
+    console.log(images.length);
+    var slideshow = document.getElementById('slideshow');
+
+    for(var i = 0; i < images.length; i++){
+        console.log(images[i]);
+        if(images[i].addEventListener("click", function(){
+            modal.style.display = "block";
+        }))
+
+        slideshow.classList.add('justCause');
+    } 
+
+    var closeButton = document.getElementsByClassName('close-slideshow')[0];
+    closeButton.onclick = function(){
+        modal.style.display = "none";
+    }
+})
+
 
 
 
