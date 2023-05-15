@@ -1,7 +1,6 @@
+const modal = document.getElementById('modal-slideshow');
 const photoJson = '/js/photo-gallery.json';
 console.log(photoJson);
-
-console.log(document.getElementById('gallery-list'))
 
 function displayPhotos(data){
     var photoList = document.getElementById('gallery-list');
@@ -28,6 +27,7 @@ function displayPhotos(data){
     }
 };
 
+
 fetch(photoJson, {
     method: 'GET',
     headers: {
@@ -40,29 +40,43 @@ fetch(photoJson, {
     displayPhotos(response);
 }).catch(error => console.log(error));
 
+window.onload = function(){
+    const images = document.getElementsByClassName('photo');
 
-var modal = document.getElementById('modal-slideshow');
-var images = document.getElementsByClassName('photo');
-
-window.addEventListener('load', function(){
-    console.log(images.length);
     var slideshow = document.getElementById('slideshow');
 
+    
+
     for(var i = 0; i < images.length; i++){
-        console.log(images[i]);
+        console.log(images[i].src);
         if(images[i].addEventListener("click", function(){
             modal.style.display = "block";
+            console.log("modal");
+            if(modal.computedStyleMap().get('display') == "block"){
+                console.log("gotcha");
+                var slideshowContainer = document.getElementById('swiper-wrapper');
+                var swiperSlide = document.createElement('div');
+                swiperSlide.classList.add('swiper-slide');
+                var swiperImage = document.createElement('img');
+                swiperImage.src = this.src;
+                console.log(swiperImage);
+                swiperSlide.appendChild(swiperImage);
+                slideshowContainer.appendChild(swiperSlide);
+                $(swiperImage).css({"object-fit" : "contain"})
+            }else{
+                console.log('ah')
+            }
         }))
-
-        slideshow.classList.add('justCause');
+        console.log(images.length)
     } 
+   
+}
 
-    var closeButton = document.getElementsByClassName('close-slideshow')[0];
-    closeButton.onclick = function(){
-        modal.style.display = "none";
-    }
-})
+var closeButton = document.getElementsByClassName('close-slideshow')[0];
+closeButton.onclick = function(){
+    modal.style.display = "none";
+}
 
-
+    
 
 
