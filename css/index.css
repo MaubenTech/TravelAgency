@@ -566,6 +566,7 @@ nav .nav{
 
 .travel-with-us .header{
     color: black;
+    flex-direction: column;
 }
 
 .travel-with-us .header h3{
@@ -598,7 +599,7 @@ nav .nav{
     padding: 22px;
     border-radius: 25px;
     position: absolute;
-    right: 75px;
+    right: 0;
 }
 
 .form-section{
