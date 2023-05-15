@@ -8,6 +8,7 @@ body{
     color: white;   
     display: flex;
     width: 100%;
+    overflow-x: hidden;
 }
 
 nav{

@@ -1,0 +1,33 @@
+main{
+    padding: 2rem;
+}
+
+main > h1{
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 100;
+}
+
+main .gallery-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-rows: repeat(6, 200px);
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+}
+
+.gallery-list li{
+    list-style-type: none;
+}
+
+.gallery-list > li > figure{
+    height: 100%;
+}
+
+.gallery-list > li > figure > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
