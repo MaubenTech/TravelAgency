@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
+    /* position: relative; */
 }
 .header{
     position: relative;
@@ -221,8 +221,8 @@ nav .nav{
 }
 
 .ft1{
-    margin-left: 35%;
-    width: 362.82px !important;
+    margin-left: 18%;
+    width: 362.82px;
 }
 
 #ft2{
@@ -552,7 +552,7 @@ nav .nav{
     background-image: url('../images/surfer-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1050px;
+    width: 950px;
     height: 30%;
     border-radius: 25px;
     left: 250px;
