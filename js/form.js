@@ -196,7 +196,42 @@ bookingForm.addEventListener("click", closeAllSelect);
 
 
 
+
+
+
 function sendEmail(){
+
+    var fullNameField = document.getElementById('fname').value;
+    var emailField = document.getElementById('email').value;
+    var phoneField = document.getElementById('phone-number').value;
+    var enquiryField = document.getElementById('form-options').value;
+
+
+
+
+    const emailBody = 
+        `
+            Hi, <b>${fullNameField}</b>,
+            Your enquiries have been submitted successfully, we would 
+            contact you shortly regarding how to go about your process.
+            <br/>
+            <br/>
+            Here are your details, please reply to this email if there is
+            anything you would like to contact us about.
+
+            <br/>
+            <br/>
+
+            Name: ${fullNameField}<br/>,
+            Email: ${emailField}>br/>,
+            Phone Number: ${phoneField}<br/>,
+            Enquiry: ${enquiryField}
+            <br/>
+            <br/>
+            Thank you for Travelling with us!
+            <span>&copy;</span> <b>EgGlobal</b>
+        `
+            ;
 
     recipientEmail = document.getElementById("email").value;
     console.log(recipientEmail);
@@ -205,7 +240,7 @@ function sendEmail(){
         To: recipientEmail,
         From: "maubentech@gmail.com",
         Subject: "Your Enquiries For Traveling With us at Eg Global Services",
-        Body: "Bitch the mail workssssssss",
+        Body: emailBody,
     })
     .then((message)=> {
         alert(message);
