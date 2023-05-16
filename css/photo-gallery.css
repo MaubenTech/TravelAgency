@@ -1,6 +1,6 @@
 section{
     padding: 2rem;
-    height: 400px;
+    height: 700px;
 }
 
 section > h1{
@@ -14,10 +14,10 @@ section > h1{
 section .gallery-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(1, 200px);
     grid-gap: 1rem;
     grid-auto-flow: dense;
-    height: 100%;
+    height: fit-content;
 }
 
 .gallery-list li{
@@ -45,7 +45,7 @@ section .gallery-list{
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 10px;
     left: 0;
     top: 0;
     width: 100%;
