@@ -1,0 +1,140 @@
+.header{
+    position: relative;
+    color: white;   
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+}
+nav .nav{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #05833F;
+    height: 100px;
+    width: 100%;
+}
+
+.logo{
+
+}
+
+.logo img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.mainMenu{
+    width: 50%;
+    font-size: large;
+    font-family: 'Segoe UI', sans-serif;
+}
+.mainMenu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainMenu ul li {
+    border-bottom: 2px solid black;
+    border-color: transparent;
+}
+
+.mainMenu ul li:hover{
+    cursor: pointer;
+    border-color: #000;
+}
+
+.mainMenu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.mainMenu ul li.active{
+    border-bottom: 2px solid black;
+}
+
+.account{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+#requestBooking{
+    background-color: #E1AD01;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    text-align: center;
+}
+
+#requestBooking:hover{
+    background-color: #ac8400;
+}
+
+.signIn, .signUp{
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: large;
+    width: 40%;
+    text-align: center;
+    /* padding: 10px; */
+    cursor: pointer;
+    outline: none;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn{
+    outline: white !important;   
+}
+
+.signUp{
+    background-color: #E1AD01;
+}
+
+.signUp:hover{
+    background-color: #ac8400;
+}
+.signInBtn, .signUpBtn{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+}
+
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+}

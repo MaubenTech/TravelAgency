@@ -1,9 +1,9 @@
-main{
+section{
     padding: 2rem;
     height: 400px;
 }
 
-main > h1{
+section > h1{
     font-size: 3rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 1rem;
@@ -11,7 +11,7 @@ main > h1{
     font-weight: 100;
 }
 
-main .gallery-list{
+section .gallery-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-template-rows: repeat(6, auto);
