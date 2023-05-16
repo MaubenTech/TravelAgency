@@ -55,14 +55,17 @@ window.onload = function(){
             if(modal.computedStyleMap().get('display') == "block"){
                 console.log("gotcha");
                 var slideshowContainer = document.getElementById('swiper-wrapper');
-                var swiperSlide = document.createElement('div');
-                swiperSlide.classList.add('swiper-slide');
-                var swiperImage = document.createElement('img');
-                swiperImage.src = this.src;
-                console.log(swiperImage);
-                swiperSlide.appendChild(swiperImage);
-                slideshowContainer.appendChild(swiperSlide);
-                $(swiperImage).css({"object-fit" : "contain"})
+                for(var k = 0; k < images.length; k++){
+                    var swiperSlide = document.createElement('div');
+                    swiperSlide.classList.add('swiper-slide');
+                    var swiperImage = document.createElement('img');
+                    swiperImage.src = images[i];
+                    console.log(swiperImage.src);
+                    console.log(swiperImage);
+                    swiperSlide.appendChild(swiperImage);
+                    slideshowContainer.appendChild(swiperSlide);
+                    $(swiperImage).css({"object-fit" : "contain"})
+                }
             }else{
                 console.log('ah')
             }
