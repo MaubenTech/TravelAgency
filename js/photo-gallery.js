@@ -67,7 +67,7 @@ function addListeners(data) {
                     console.log("Data p image: " + data[p].image);
                     console.log("CurrentImage src: " + event.currentTarget.src);
                     if(event.currentTarget.src.includes(data[p].image))
-                    continue;
+                        continue;
                     swiperSlide = document.createElement('div');
                     swiperSlide.classList.add('swiper-slide');
                     swiperImage = document.createElement('img');
