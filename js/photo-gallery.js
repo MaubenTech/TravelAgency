@@ -60,8 +60,8 @@ function addListeners(data) {
                 var swiperImage = document.createElement('img');
                 swiperImage.src = event.currentTarget.src;
                 swiperSlide.appendChild(swiperImage);
-                console.log("Added: " + swiperImage.src);
                 slideshowContainer.appendChild(swiperSlide);
+                console.log(swiperImage);
                 
                 for(var p = 0; p < data.length; p++){
                     console.log("Data p image: " + data[p].image);
@@ -73,8 +73,8 @@ function addListeners(data) {
                     swiperImage = document.createElement('img');
                     swiperImage.src = data[p].image;
                     swiperSlide.appendChild(swiperImage);
-                    console.log("Added: " + swiperImage.src);
                     slideshowContainer.appendChild(swiperSlide);
+                    console.log(swiperImage);
                     $(swiperImage).css({"object-fit" : "cover"});
                 }
             }else{
