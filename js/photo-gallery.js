@@ -47,20 +47,9 @@ window.onload = function(){
 
     var slideshow = document.getElementById('slideshow');
 
-    function displaySlides(data){
-        for(var p = 0; p < data.length; p++){
-            var slideshowContainer = document.getElementById('swiper-wrapper');
-            var swiperSlide = document.createElement('div');
-            swiperSlide.classList.add('swiper-slide');
-            var swiperImage = document.createElement('img');
-            swiperImage.src = data[p].image;
-            console.log(swiperImage.src);
-            console.log(swiperImage);
-            swiperSlide.appendChild(swiperImage);
-            slideshowContainer.appendChild(swiperSlide);
-            $(swiperImage).css({"object-fit" : "cover"})
-        }
-    }
+    // function displaySlides(data){
+        
+    // }
     
 
     for(var i = 0; i < images.length; i++){
@@ -72,7 +61,18 @@ window.onload = function(){
             console.log("modal");
             if(modal.computedStyleMap().get('display') == "flex"){
                 console.log("gotcha");
-                displaySlides(photoJson);
+                for(var p = 0; p < photoJson.length; p++){
+                    var slideshowContainer = document.getElementById('swiper-wrapper');
+                    var swiperSlide = document.createElement('div');
+                    swiperSlide.classList.add('swiper-slide');
+                    var swiperImage = document.createElement('img');
+                    swiperImage.src = photoJson[i];
+                    console.log(swiperImage.src);
+                    console.log(swiperImage);
+                    swiperSlide.appendChild(swiperImage);
+                    slideshowContainer.appendChild(swiperSlide);
+                    $(swiperImage).css({"object-fit" : "cover"})
+                }
             }else{
                 console.log('ah')
             }
