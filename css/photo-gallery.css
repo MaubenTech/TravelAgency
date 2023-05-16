@@ -1,5 +1,6 @@
 main{
     padding: 2rem;
+    height: 400px;
 }
 
 main > h1{
@@ -13,9 +14,10 @@ main > h1{
 main .gallery-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-template-rows: repeat(6, 200px);
+    grid-template-rows: repeat(6, auto);
     grid-gap: 1rem;
     grid-auto-flow: dense;
+    height: 100%;
 }
 
 .gallery-list li{
@@ -56,6 +58,7 @@ main .gallery-list{
 .modal-slideshow .slideshow{
     margin: auto;
     display: block;
+    height: fit-content;
     width: 80%;
     max-width: 700px;
 }

@@ -50,22 +50,22 @@ window.onload = function(){
     for(var i = 0; i < images.length; i++){
         console.log(images[i].src);
         if(images[i].addEventListener("click", function(){
-            modal.style.display = "block";
+            modal.style.display = "flex";
+            modal.style.justifyContent = "center";
+            modal.style.alignItems = "center";
             console.log("modal");
-            if(modal.computedStyleMap().get('display') == "block"){
+            if(modal.computedStyleMap().get('display') == "flex"){
                 console.log("gotcha");
                 var slideshowContainer = document.getElementById('swiper-wrapper');
-                for(var k = 0; k < images.length; k++){
-                    var swiperSlide = document.createElement('div');
-                    swiperSlide.classList.add('swiper-slide');
-                    var swiperImage = document.createElement('img');
-                    swiperImage.src = images[i];
-                    console.log(swiperImage.src);
-                    console.log(swiperImage);
-                    swiperSlide.appendChild(swiperImage);
-                    slideshowContainer.appendChild(swiperSlide);
-                    $(swiperImage).css({"object-fit" : "contain"})
-                }
+                var swiperSlide = document.createElement('div');
+                swiperSlide.classList.add('swiper-slide');
+                var swiperImage = document.createElement('img');
+                swiperImage.src = this.src;
+                console.log(swiperImage.src);
+                console.log(swiperImage);
+                swiperSlide.appendChild(swiperImage);
+                slideshowContainer.appendChild(swiperSlide);
+                $(swiperImage).css({"object-fit" : "contain"})
             }else{
                 console.log('ah')
             }
