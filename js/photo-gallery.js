@@ -75,7 +75,7 @@ function addListeners(data) {
                     swiperSlide.appendChild(swiperImage);
                     console.log("Added: " + swiperImage.src);
                     slideshowContainer.appendChild(swiperSlide);
-                    $(swiperImage).css({"object-fit" : "cover"})
+                    $(swiperImage).css({"object-fit" : "cover"});
                 }
             }else{
                 console.log('ah');
