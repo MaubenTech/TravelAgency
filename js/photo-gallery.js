@@ -66,7 +66,7 @@ window.onload = function(){
                     var swiperSlide = document.createElement('div');
                     swiperSlide.classList.add('swiper-slide');
                     var swiperImage = document.createElement('img');
-                    swiperImage.src = photoJson[i];
+                    swiperImage.src = this.src;
                     console.log(swiperImage.src);
                     console.log(swiperImage);
                     swiperSlide.appendChild(swiperImage);
