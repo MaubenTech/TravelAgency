@@ -123,7 +123,6 @@ closeButton.onclick = function () {
     // addListeners(jsonResponse);
 }
 
-
 function addAttr(sliderIndex, sliderLength, element) {
     element.setAttribute("role", "group");
     element.setAttribute("aria-label", `${sliderIndex+1} / ${sliderLength}`);
