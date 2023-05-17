@@ -66,16 +66,22 @@ function addListeners(data) {
                 for(var p = 0; p < data.length; p++){
                     console.log("Data p image: " + data[p].image);
                     console.log("CurrentImage src: " + event.currentTarget.src);
-                    if(event.currentTarget.src.includes(data[p].image))
+                    if(event.currentTarget.src.includes(data[p].image)){
+                        console.log(data[p].image)
+                        swiperSlide = document.createElement('div');
+                        swiperSlide.classList.add('swiper-slide');
+                        swiperImage = document.createElement('img');
+                        swiperImage.src = data[p].image;
+                        swiperSlide.appendChild(swiperImage);
+                        slideshowContainer.appendChild(swiperSlide);
+                        console.log(swiperImage);
+                        $(swiperImage).css({"object-fit" : "cover"});
                         continue;
-                    swiperSlide = document.createElement('div');
-                    swiperSlide.classList.add('swiper-slide');
-                    swiperImage = document.createElement('img');
-                    swiperImage.src = data[p].image;
-                    swiperSlide.appendChild(swiperImage);
-                    slideshowContainer.appendChild(swiperSlide);
-                    console.log(swiperImage);
-                    $(swiperImage).css({"object-fit" : "cover"});
+                    }   
+                    else{
+                        console.log(event.currentTarget.src)
+                        console.log(data[p].image)
+                    }
                 }
             }else{
                 console.log('ah');
@@ -88,7 +94,7 @@ var closeButton = document.getElementsByClassName('close-slideshow')[0];
 closeButton.onclick = function(){
     modal.style.display = "none";
     
-    var slideshowContainer = document.getElementById('swiper-wrapper');
+    var slideshowContainer = document.getElementById('swiper');
     slideshowContainer.innerHTML = '';
     console.log(slideshowContainer);
 }
