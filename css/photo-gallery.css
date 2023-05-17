@@ -43,6 +43,8 @@ section .gallery-list{
 
 .modal-slideshow{
     display: none;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     z-index: 1;
     padding-top: 10px;

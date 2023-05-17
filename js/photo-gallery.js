@@ -28,7 +28,7 @@ function displayPhotos(data) {
     }
 };
 
-let jsonResponse;
+let slideshowContainer = document.getElementById('swiper-wrapper');
 
 fetch(photoJson, {
     method: 'GET',
@@ -36,94 +36,59 @@ fetch(photoJson, {
         'Accept': 'application/json',
     },
 }).then((response) => {
-    return response.json()
+    return response.json();
 }).then((response) => {
     console.log(response);
-    jsonResponse = response;
     displayPhotos(response);
+    createModal(response);
     addListeners(response);
 }).catch(error => console.log(error));
 
-const func = (event, data) => {
-    modal.style.display = "flex";
-    modal.style.justifyContent = "center";
-    modal.style.alignItems = "center";
-    if (modal.computedStyleMap().get('display') == "flex") {
-        console.log("gotcha");
-        var slideshowContainer = document.getElementById('swiper-wrapper');
-
-        // var swiperSlide = document.createElement('div');
-        // swiperSlide.classList.add('swiper-slide');
-        // var swiperImage = document.createElement('img');
-        // swiperImage.src = event.currentTarget.src;
-        // swiperSlide.appendChild(swiperImage);
-        // swiperSlide.setAttribute("data-swiper-slide-index", 2);
-        // slideshowContainer.appendChild(swiperSlide);
-        // console.log(swiperImage);
-        let counter = 0;
-        for (var p = 0; p < data.length; p++) {
-            counter++;
-            console.log("Data p image: " + data[p].image);
-            console.log("CurrentImage src: " + event.currentTarget.src);
-            let swiperSlide = document.createElement('div');
-            swiperSlide.classList.add('swiper-slide');
-            let swiperImage = document.createElement('img');
-            swiperImage.src = data[p].image;
-            swiperSlide.appendChild(swiperImage);
-            console.log(swiperImage);
-            $(swiperImage).css({ "object-fit": "cover" });
-            if (event.currentTarget.src.includes(data[p].image)) {
-                swiperSlide.setAttribute("data-swiper-slide-index", 0);
-                addAttr(0, data.length, swiperSlide);
-                slideshowContainer.appendChild(swiperSlide);
-                counter--;
-                continue;
-            }
-            swiperSlide.setAttribute("data-swiper-slide-index", counter);
-            addAttr(counter, data.length, swiperSlide);
-            slideshowContainer.appendChild(swiperSlide);
-        }
-    } else {
-        console.log('ah');
+function createModal(data) {
+    for (let i = 0; i < data.length; i++) {
+        let swiperSlide = document.createElement('div');
+        swiperSlide.classList.add('swiper-slide');
+        let swiperImage = document.createElement('img');
+        swiperImage.src = data[i].image;
+        $(swiperImage).css({ "object-fit": "cover" });
+        swiperSlide.appendChild(swiperImage);
+        slideshowContainer.appendChild(swiperSlide);
     }
+    console.log("Slide show container:.... ");
+    console.log(slideshowContainer);
+}
+
+const clickHandler = (event, data) => {
+
+    swiper.initialSlide = 0;
+    swiper.activeIndex = 0;
+    swiper.realIndex = 0;
+    swiper.slideTo(0, 0, false);
+    swiper.update();
+    modal.style.display = "flex";
+    // swiper.initialSlide = slideIndex;
+    // swiper.activeIndex = swiper.initialSlide;
+    // swiper.updateActiveIndex(swiper.initialSlide);
+
 }
 
 function addListeners(data) {
     const images = Array.from(document.getElementsByClassName('photo'));
-    console.log(images.length);
-    console.log(document.getElementById('swiper-wrapper'));
+    // console.log(images.length);
+    // console.log(document.getElementById('swiper-wrapper'));
 
     images.forEach((image) => {
-        image.addEventListener("click", (ev) => func(ev, data));
+        image.addEventListener("click", (ev) => clickHandler(ev, data));
     })
 }
 
 var closeButton = document.getElementsByClassName('close-slideshow')[0];
 closeButton.onclick = function () {
     modal.style.display = "none";
-    
-    modal.removeChild(document.getElementById("slideshow"));
 
-    let slideshow = document.createElement("div");
-    slideshow.id = "slideshow";
-    slideshow.classList.add("slideshow", "swiper");
-
-
-
-    let slideshowContainer = document.createElement('div');
-    slideshowContainer.id = "swiper-wrapper";
-    slideshowContainer.classList.add("swiper-wrapper");
-
-    slideshow.appendChild(slideshowContainer);
-
-    modal.appendChild(slideshow);
-
-
-    console.log(slideshowContainer);
-    // addListeners(jsonResponse);
-}
-
-function addAttr(sliderIndex, sliderLength, element) {
-    element.setAttribute("role", "group");
-    element.setAttribute("aria-label", `${sliderIndex+1} / ${sliderLength}`);
+    // swiper.initialSlide = 0;
+    // swiper.activeIndex = 0;
+    // swiper.realIndex = 0;
+    // swiper.slideTo(0, 0, false);
+    // swiper.update();
 }
