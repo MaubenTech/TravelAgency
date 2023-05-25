@@ -138,13 +138,13 @@ section.our-services{
     width: 100%;
     overflow: hidden;
 }
-@keyframes slide{
+/* @keyframes slide{
     0%{
         transform: translateX(0px);
     }
 
    
-    90%{
+    94%{
         transform: translateX(-1320px);
     }
 
@@ -152,31 +152,33 @@ section.our-services{
         transform: translateX(0px);
     }
 
-}
+} */
 .services-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    
     animation-name: slide;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    flex-shrink: 0;
 }
 
 .service-card{
     /* flex-basis: 20%; */
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: column; */
     height: 400px;
     width: 500px;
     /* border-color: #006b35; */
     border-radius: 50px;
     /* background: #007e3e; */
     margin-right: 20px;
-    position: relative;
     cursor: pointer;
+    position: relative;
 }
-
 
 
 .service-card img{
@@ -187,10 +189,11 @@ section.our-services{
 
 .service-description{
     position: absolute;
-    top: 150px;
+    top: 0;
+    padding-top: 30%;
     color: white;
+    padding-left: 30%;
     z-index: 10;
-    left: 150px;
 }
 
 .service-card-overlay{
@@ -200,6 +203,7 @@ section.our-services{
     width: 100%;
     opacity: 0.6;
     border-radius: 50px;
+    top: 0;
 }
 
 .previous-destinations-container{
@@ -499,7 +503,7 @@ section.our-services{
     background-image: url('../images/surfer-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 75%;
+    width: 80%;
     height: 30%;
     border-radius: 25px;
     left: 12%;
@@ -536,7 +540,7 @@ section.our-services{
     padding: 20px;
     outline: none;
     border: none;
-    width: 350px;
+    width: 100%;
     font-size: large;  
 }
 

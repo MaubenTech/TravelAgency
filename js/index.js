@@ -65,6 +65,6 @@ southAfrica[0].addEventListener("mouseout", ()=> {
 })
 
 
-$(windows).onload(function(){
-    $('.service-content').css({"translateX" : "200px"})
-})
+// $(windows).onload(function(){
+//     $('.service-content').css({"translateX" : "200px"})
+// })
