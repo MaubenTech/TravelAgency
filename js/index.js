@@ -63,3 +63,8 @@ southAfrica[0].addEventListener("mouseover", ()=> {
 southAfrica[0].addEventListener("mouseout", ()=> {
     reverseDestinationOverlay(".south-africa-overlay")
 })
+
+
+$(windows).onload(function(){
+    $('.service-content').css({"translateX" : "200px"})
+})

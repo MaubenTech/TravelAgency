@@ -222,13 +222,13 @@ function sendEmail(){
             <br/>
             <br/>
 
-            Name: ${fullNameField}<br/>,
-            Email: ${emailField}>br/>,
-            Phone Number: ${phoneField}<br/>,
+            Name: ${fullNameField},<br/>
+            Email: ${emailField},<br/>
+            Phone Number: ${phoneField},<br/>
             Enquiry: ${enquiryField}
             <br/>
             <br/>
-            Thank you for Travelling with us!
+            Thank you for Travelling with us! <br/>
             <span>&copy;</span> <b>EgGlobal</b>
         `
             ;
@@ -243,7 +243,7 @@ function sendEmail(){
         Body: emailBody,
     })
     .then((message)=> {
-        alert(message);
+        alert(message, "We will contact you shortly");
     })
 }
 
