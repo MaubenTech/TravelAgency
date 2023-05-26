@@ -64,7 +64,30 @@ southAfrica[0].addEventListener("mouseout", ()=> {
     reverseDestinationOverlay(".south-africa-overlay")
 })
 
+var serviceCards = document.getElementsByClassName('service-card');
+var serviceCardsOverlays = document.getElementsByClassName('service-card-overlay');
+console.log(serviceCardsOverlays);
+var serviceCardArray = Array.from(serviceCards);
+var serviceCardsOverlaysArray = Array.from(serviceCardsOverlays);
 
+
+
+serviceCardArray.forEach((serviceCard) => {
+    serviceCard.addEventListener("mouseenter", (event)=>{
+      event.target.lastElementChild.style.height = "0";
+      event.target.lastElementChild.style.transition = "height 0.5s ease-in-out"
+    })
+
+    serviceCard.addEventListener("mouseleave", (event)=> {
+        event.target.lastElementChild.style.height = "90%";
+        event.target.lastElementChild.style.transition = "height 0.5s ease-in-out";
+    })
+})
+
+var servicesContent = document.getElementsByClassName('services-content')[0];
+var serviceContentCloned = servicesContent.cloneNode(true);
+// servicesContent.appendChild(serviceContentCloned.childNodes);
+console.log(serviceContentCloned.childNodes)
 // $(windows).onload(function(){
 //     $('.service-content').css({"translateX" : "200px"})
 // })

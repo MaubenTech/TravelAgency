@@ -154,6 +154,8 @@ section.our-services{
 
 } */
 .services-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -205,6 +207,8 @@ section.our-services{
     border-radius: 50px;
     top: 0;
 }
+
+
 
 .previous-destinations-container{
     height: 1250px;
