@@ -83,3 +83,8 @@ serviceCardArray.forEach((serviceCard) => {
         event.target.lastElementChild.style.transition = "height 0.5s ease-in-out";
     })
 })
+
+var servicesContent = document.getElementsByClassName('services-content')[0];
+var serviceContentCloned = servicesContent.cloneNode(true);
+// servicesContent.appendChild(serviceContentCloned.childNodes);
+console.log(serviceContentCloned.childNodes)
