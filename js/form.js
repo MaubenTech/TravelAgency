@@ -234,7 +234,6 @@ function sendEmail(){
             ;
 
     recipientEmail = document.getElementById("email").value;
-    console.log(recipientEmail);
     Email.send({
         SecureToken: "9bf98f2b-894d-48d5-87e7-03e2182c7310",
         To: recipientEmail,
@@ -243,7 +242,30 @@ function sendEmail(){
         Body: emailBody,
     })
     .then((message)=> {
-        alert(message, "We will contact you shortly");
+        var customM = "We Will contact you shortly"
+        confirmationPopup(message, customM);
+        var formSection = document.getElementsByClassName('booking-form')[0];
+        formSection.style.filter = "blur(20px)"
+    })
+}
+
+function confirmationPopup(message, customMessage){
+    var popupContainer = document.getElementsByClassName('form-section')[0];
+    var popUp = document.createElement("div");
+    popUp.classList.add("form-popup-body")
+    popUp.innerHTML = 
+    `   
+        <div class="form-popup">
+            <div class="message-area">${message}</div>
+            <button class="exit-form-area-button">OK</button>
+        </div>
+    `
+    popupContainer.appendChild(popUp);
+
+    var closePopup = document.getElementsByClassName('exit-form-area-button')[0];
+    
+    closePopup.addEventListener('click', ()=> {
+        location.reload();
     })
 }
 

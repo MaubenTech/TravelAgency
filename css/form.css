@@ -279,3 +279,47 @@
     top: 15px;
     left: 5px;
 }
+
+.form-popup-body{
+    display: grid;
+    place-items: center;
+    height: 200px;
+    z-index: 10000000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+}
+.form-popup{
+    margin-top: 20px;
+    border: 1px solid #006b35;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    position: relative  ;
+    width: 100%;
+}
+
+.message-area{
+    margin-top: 10%;
+    align-self: center;
+}
+
+.exit-form-area-button{
+    width: 20%;
+    align-self: flex-end;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #05833F;
+}
+
+.exit-form-area-button:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}

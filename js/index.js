@@ -84,10 +84,10 @@ serviceCardArray.forEach((serviceCard) => {
     })
 })
 
-var servicesContent = document.getElementsByClassName('services-content')[0];
-var serviceContentCloned = servicesContent.cloneNode(true);
-// servicesContent.appendChild(serviceContentCloned.childNodes);
-console.log(serviceContentCloned.childNodes)
-// $(windows).onload(function(){
-//     $('.service-content').css({"translateX" : "200px"})
-// })
+// var servicesContent = document.getElementsByClassName('services-content')[0];
+// var serviceContentCloned = servicesContent.cloneNode(true);
+// // servicesContent.appendChild(serviceContentCloned.childNodes);
+// console.log(serviceContentCloned.childNodes)
+// // $(windows).onload(function(){
+// //     $('.service-content').css({"translateX" : "200px"})
+// // })
