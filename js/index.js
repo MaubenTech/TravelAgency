@@ -91,3 +91,24 @@ serviceCardArray.forEach((serviceCard) => {
 // // $(windows).onload(function(){
 // //     $('.service-content').css({"translateX" : "200px"})
 // // })
+
+var checkedInput = document.getElementsByClassName('toggle-mMenu')[0];
+checkedInput.addEventListener('change', function(){
+    if(this.checked){
+        $('.mobile-menu').css({
+            "width" : "100%", 
+            "top" : "0",
+            "left" : "0",
+            "padding-top" : "10px", 
+            "padding-bottom" : "20px",
+            "transition" : "all 300ms ease",
+            "transform" : "translateX(0)"
+        })
+    }
+    else{
+        $('.mobile-menu').css({
+            "top" : "0",
+            "left" : "100%",
+        })
+    }
+})

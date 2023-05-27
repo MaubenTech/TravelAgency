@@ -30,13 +30,21 @@ class Header extends HTMLElement{
                         </div>
                     </div>
                 </nav>
-                <div class="mobile-menu" >
+                <div class="mobile-menu-hamburger" >
 
-                    <input type="checkbox" hidden/>
+                    <input type="checkbox" hidden class="toggle-mMenu"/>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
+            </div>
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="/html/photo-gallery.html">Photo Gallery</a></li>
+                    <li><a href="/html/destinations.html">Destinations</a></li>
+                </ul>
             </div>
             <div class="wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1070 65" preserveAspectRatio="none">
