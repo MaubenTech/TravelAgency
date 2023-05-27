@@ -719,4 +719,16 @@ section.our-services{
         font-weight: 800;
 
     }
+
+    .hero{
+        height: 50vh;
+    }
+
+    .swiper{
+        height: 100%;
+    }
+
+    .swiper-slide .carousel-title{
+        font-size: 50px !important;
+    }
 }

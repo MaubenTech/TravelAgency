@@ -1,8 +1,8 @@
 $(document).ready(function(){
     console.log('ready');
-    $('.carousel-title').css("bottom", "220px")
+    $('.carousel-title').css("bottom", "50%")
     $('.carousel-title').css("transition","bottom 1.8s")
-    $('.taking').css("bottom", "199px")
+    $('.taking').css("bottom", "40%")
     $('.taking').css("transition", "bottom 2.4s")
 
     //calling the async function
@@ -11,6 +11,12 @@ $(document).ready(function(){
     $('.mainMenu ul').on('click', 'li', ()=> {
         $(this).addClass('active').siblings().removeClass('active');
     })
+
+    if($(window).width() <= 768){
+        console.log("reduce");
+        $('.carousel-title').css("bottom", "40%")
+        $('.taking').css("bottom", "20%");
+    }
 })
 
 

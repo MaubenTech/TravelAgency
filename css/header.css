@@ -60,6 +60,14 @@ nav .nav{
     border-bottom: 2px solid black;
 }
 
+.mobile-menu-hamburger{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
 .account{
     width: 20%;
     display: flex;
