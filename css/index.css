@@ -592,14 +592,20 @@ section.our-services{
 
 @media screen and (max-width: 768px){
 
+    body{
+        overflow: hidden;
+    }
+
     .header{
         justify-content: center !important;
         align-items: center !important;
         width: 100%;
         background-color: #05833F;
+        overflow: hidden
     }
     .nav{
         justify-content: space-between !important;
+        width: 70%;
     }
     .wave{
         display: none;
@@ -621,13 +627,16 @@ section.our-services{
     }
 
     .mobile-menu-hamburger{
-        display: block;
+        display: grid;
+        place-items: center;
         /* position: relative; */
         /* top: 50px; */
         /* left: 50px; */
-        margin-right: 10px;
+        margin-right: 20px;
         user-select: none;
         z-index: 10000;
+        width: 30%;
+        overflow: hidden;
     }
 
     .mobile-menu-hamburger input{
@@ -637,8 +646,8 @@ section.our-services{
         position: absolute;
         z-index: 0;
         opacity: 0;
-        top: 30px;
-        right: 2px;
+        top: 27%;
+        right: 8.5%;
     }
    
     .mobile-menu-hamburger span{
@@ -679,7 +688,7 @@ section.our-services{
     }
 
     .mobile-menu{
-        display: flex;
+        display: none;
         height: 60%;
         /* height: 0; */
         /* transform: translateX(420px); */
@@ -722,6 +731,7 @@ section.our-services{
 
     .hero{
         height: 50vh;
+        overflow: hidden;
     }
 
     .swiper{
@@ -730,5 +740,22 @@ section.our-services{
 
     .swiper-slide .carousel-title{
         font-size: 50px !important;
+    }
+
+    .what-egg-brings{
+        overflow: hidden;
+    }
+
+    .section-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ft1{
+        margin-left: 0 !important;
+    }
+
+    #ft2, .ft1{
+        width: 100% !important;
     }
 }

@@ -102,6 +102,7 @@ var checkedInput = document.getElementsByClassName('toggle-mMenu')[0];
 checkedInput.addEventListener('change', function(){
     if(this.checked){
         $('.mobile-menu').css({
+            "display" : "flex",
             "width" : "100%", 
             "top" : "0",
             "left" : "0",
@@ -115,6 +116,7 @@ checkedInput.addEventListener('change', function(){
         $('.mobile-menu').css({
             "top" : "0",
             "left" : "100%",
+            "transition" : "all 300ms ease",
         })
     }
 })
