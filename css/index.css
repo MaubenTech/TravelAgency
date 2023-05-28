@@ -519,17 +519,17 @@ section.our-services{
     padding: 20px;
 }
 
-.travel-with-us .header{
+.travel-with-us .trheader{
     color: black;
     flex-direction: column;
 }
 
-.travel-with-us .header h3{
+.travel-with-us .trheader h3{
     font-size: 70px;
     margin: 0;
 }
 
-.travel-with-us .header h4{
+.travel-with-us .trheader h4{
     font-size: 30px;
     margin: 0;
 }
@@ -593,7 +593,7 @@ section.our-services{
 @media screen and (max-width: 768px){
 
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .header{
@@ -702,7 +702,7 @@ section.our-services{
         padding-top: 10px;
         padding-bottom: 20px; */
         top: 0;
-        left: 100%
+        /* left: 100% */
     }
 
     .mobile-menu ul{
@@ -754,8 +754,52 @@ section.our-services{
     .ft1{
         margin-left: 0 !important;
     }
-
+/* 
     #ft2, .ft1{
         width: 100% !important;
+    } */
+
+    .next-holiday{
+        display: flex;
+        flex-direction: column;
+        margin-left: 7%;
+        margin-right: 7%;
+        justify-content: space-between;
+        height: 750px;
+        padding: 30px 0;
     }
+
+    .holiday{
+        height: 60%;
+    }
+
+    .holiday h2{
+        font-size: 30px;
+    }
+
+    .travel-with-us{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        width: 85% !important;
+        margin-top: 10px;
+    }
+
+    .travel-with-us .trheader h4{
+        font-size: 30px;
+    }
+
+    .travel-with-us .trheader h3{
+        font-size: 30px;
+    }
+
+    .email-address{
+        width: 100% !important;
+    }
+
+    .email-address input{
+        width: 70% !important;
+    }
+
 }
