@@ -172,11 +172,11 @@ body{
 
 .departure-form .date{
     width: 20%;
+    padding: 15px !important;
 }
 
 .departure-form .date input{
     width: 100%;
-    padding: 17px;
 }
 
 .search-wrapper{
@@ -305,4 +305,74 @@ body{
 
 .loadmore a:hover{
     background-color: #947205;
+}
+
+@media screen and (max-width: 768px){
+
+    .explore-window{
+        flex-direction: column;
+    }
+    .explore-side-menu{
+        display: flex;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .top-half{
+        display: none;
+    }
+
+
+    .side-menu-items{
+        flex-direction: row;
+        width: 60%;
+    }
+
+    .explore-content{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .departure-form{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .departure-form .origin,
+    .departure-form .destination,
+    .departure-form .date,
+    .search-wrapper{
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .departure-form .destination{
+        margin-left: 15px;
+    }
+    
+    .departure-form .date{
+        padding: 15px;
+        padding-left: 0 !important;
+    }
+    
+    .departure-form .date input{
+        margin-right: 25px;
+    }
+
+    .search-wrapper{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .places-container{
+        grid-template-columns: repeat(1, minmax(240px, 1fr));
+    }
+
+    .loadmore{
+        display: none;
+    }
 }

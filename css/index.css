@@ -311,9 +311,9 @@ section.our-services{
 } */
 
 .egypt, .london, .south-africa{
-    min-height: 1px;
     height: 300px;
-    flex-basis: 32.3%;
+    /* flex-basis: 32.3%; */
+    width: 30%;
     background-size: cover;
     border-radius: 20px;
     position: relative;
@@ -544,7 +544,7 @@ section.our-services{
     padding: 20px;
     outline: none;
     border: none;
-    width: 100%;
+    width: 90%;
     font-size: large;  
 }
 
@@ -593,7 +593,8 @@ section.our-services{
 @media screen and (max-width: 768px){
 
     body{
-        overflow-x: hidden;
+        overflow-x: hidden !important;
+        margin: 0;
     }
 
     .header{
@@ -606,6 +607,7 @@ section.our-services{
     .nav{
         justify-content: space-between !important;
         width: 70%;
+        overflow: hidden !important;
     }
     .wave{
         display: none;
@@ -636,7 +638,7 @@ section.our-services{
         user-select: none;
         z-index: 10000;
         width: 30%;
-        overflow: hidden;
+        overflow: hidden !important;
     }
 
     .mobile-menu-hamburger input{
@@ -648,6 +650,7 @@ section.our-services{
         opacity: 0;
         top: 27%;
         right: 8.5%;
+        overflow: hidden !important;
     }
    
     .mobile-menu-hamburger span{
@@ -702,7 +705,7 @@ section.our-services{
         padding-top: 10px;
         padding-bottom: 20px; */
         top: 0;
-        /* left: 100% */
+        left: 100%
     }
 
     .mobile-menu ul{
@@ -744,21 +747,89 @@ section.our-services{
 
     .what-egg-brings{
         overflow: hidden;
+        width: 90%;
+        margin-left: 4% !important;
+        margin-right: 4% !important;
+        padding: 10px
     }
 
     .section-content{
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+
+    .section-content {
+        width: 100%;
     }
 
     .ft1{
         margin-left: 0 !important;
     }
-/* 
-    #ft2, .ft1{
-        width: 100% !important;
-    } */
 
+    #ft1, #ft2{
+        width: auto;
+    }
+
+    .our-services{
+        display: none !important;
+    }
+  
+    .previous-destinations-container{
+        height: fit-content;
+    }
+
+    .previous-destinations{
+        display: flex;
+        margin-left: 4% !important;
+        margin-right: 4% !important;
+    }
+
+    .destination-title{
+        width: 100%;
+    }
+
+    .top-destination-title{
+        width: 100%;
+    }
+
+    .top-destination-title h2{
+        font-size: 30px !important;
+    }
+
+    .destinations{
+
+    }
+
+    .firstTwo-destinations{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .firstTwo-destinations .mauritius{
+        width: 100%;
+    }
+
+    .firstTwo-destinations .singapore{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .firstTwo-destinations .mauritius h2, 
+    .firstTwo-destinations .singapore h2{
+        font-size: 30px;
+    }
+
+    .firstThree-destinations{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstThree-destinations > *{
+        width: 100%;
+        margin-top: 10px;
+    }
     .next-holiday{
         display: flex;
         flex-direction: column;
@@ -802,4 +873,14 @@ section.our-services{
         width: 70% !important;
     }
 
+    .footer{
+        height: fit-content;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px 0 20px;
+    }
 }

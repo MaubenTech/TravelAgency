@@ -274,3 +274,41 @@ submitForm.addEventListener("click", (event)=> {
     event.preventDefault();
     sendEmail();
 })
+
+function newsletter(){
+
+    var recipientEmail = document.getElementById('newsletter-field');
+
+    Email.send({
+        SecureToken: "9bf98f2b-894d-48d5-87e7-03e2182c7310",
+        To: recipientEmail,
+        From: "maubentech@gmail.com",
+        Subject: "Welcome to our newsletter",
+        Body: emailBody,
+    })
+    .then((message)=> {
+        var newsletterStatus = "We Will contact you shortly";
+        newsletterPopup();
+    })
+
+    function newsletterPopup(message, newsletterStatus){
+        var popupContainer = document.getElementsByClassName('form-section')[0];
+        var popUp = document.createElement("div");
+        popUp.classList.add("form-popup-body")
+        popUp.innerHTML = 
+        `   
+            <div class="form-popup">
+                <div class="message-area">${message}</div>
+                <button class="exit-form-area-button">OK</button>
+            </div>
+        `
+        popupContainer.appendChild(popUp);
+    }
+}
+
+var submitNewsletterButton = document.getElementById('submit-newsletter-application');
+submitNewsletterButton.addEventListener('click', function(event){
+    event.preventDefault();
+    newsletter();
+})
+

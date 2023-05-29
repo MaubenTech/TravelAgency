@@ -114,6 +114,7 @@ checkedInput.addEventListener('change', function(){
     }
     else{
         $('.mobile-menu').css({
+            "display" : "none",
             "top" : "0",
             "left" : "100%",
             "transition" : "all 300ms ease",
