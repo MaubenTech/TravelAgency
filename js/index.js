@@ -99,6 +99,7 @@ serviceCardArray.forEach((serviceCard) => {
 // // })
 
 var checkedInput = document.getElementsByClassName('toggle-mMenu')[0];
+console.log(checkedInput);
 checkedInput.addEventListener('change', function(){
     if(this.checked){
         $('.mobile-menu').css({
