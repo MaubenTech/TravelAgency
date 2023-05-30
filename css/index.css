@@ -631,7 +631,7 @@ section.our-services{
     .mobile-menu-hamburger{
         display: grid;
         place-items: center;
-        /* position: relative; */
+        position: relative;
         /* top: 50px; */
         /* left: 50px; */
         margin-right: 20px;
@@ -643,19 +643,20 @@ section.our-services{
 
     .mobile-menu-hamburger input{
         display: block;
-        width: 50px;
-        height: 40px;
+        width: 100%;
+        height: 100%;
         position: absolute;
         z-index: 0;
         opacity: 0;
-        top: 27%;
-        right: 8.5%;
+        /* top: 27%; */
+        /* right: 8.5%; */
+        top: 0;
         overflow: hidden !important;
     }
    
     .mobile-menu-hamburger span{
         display: block;
-        width: 33px;
+        width: 50%;
         height: 4px;
         margin-bottom: 5px;
         /* position: relative; */
@@ -692,12 +693,12 @@ section.our-services{
 
     .mobile-menu{
         display: none;
-        height: 60%;
+        height: 65%;
         /* height: 0; */
         /* transform: translateX(420px); */
         transition: all 300ms ease;
         position: absolute;
-        z-index: 1000;
+        /* z-index: 1000; */
         background-color: whitesmoke;
         /* width: 100%;
         top: 0;
@@ -705,7 +706,7 @@ section.our-services{
         padding-top: 10px;
         padding-bottom: 20px; */
         top: 0;
-        left: 100%
+        /* left: 100% */
     }
 
     .mobile-menu ul{

@@ -221,7 +221,8 @@ body{
 }
 
 .map{
-    width: 100%;
+    width: 98%;
+    padding: 10px;
 }
 
 .map iframe{
@@ -413,14 +414,19 @@ body{
 
     }
 
+    .explore{
+
+    }
+
     .explore-window{
         flex-direction: column;
-        padding: 10px;
     }
     .explore-side-menu{
         display: flex;
-        width: 100%;
+        width: 92%;
         overflow-x: hidden;
+        padding: 0 !important;
+        border-right: none !important;
     }
 
     .top-half{
@@ -434,12 +440,15 @@ body{
 
     .side-menu-items{
         flex-direction: row;
-        width: 100%;
+        width: 85%;
+        padding: 0 !important;
+        padding-left: 10px !important;
     }
 
     .explore-content{
-        width: 100%;
-        padding: 10px;
+        width: 95%;
+        /* padding: 10px; */
+        padding-left: 10px !important;
     }
 
     .departure-form{
@@ -487,6 +496,7 @@ body{
 
     .places-container{
         grid-template-columns: repeat(1, minmax(60%, 1fr));
+        place-items: center;
     }
 
     .loadmore{

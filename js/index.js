@@ -101,8 +101,19 @@ serviceCardArray.forEach((serviceCard) => {
 var checkedInput = document.getElementsByClassName('toggle-mMenu')[0];
 console.log(checkedInput);
 checkedInput.addEventListener('change', function(){
-    if(this.checked){
+    if(!this.checked){
+        
         $('.mobile-menu').css({
+            // "display" : "none",
+            "opacity" : "0",
+            "top" : "0",
+            "left" : "0",
+            "transition" : "all 300ms ease",
+            "z-index" : "-2"
+        })
+    }
+    else{
+       $('.mobile-menu').css({
             "display" : "flex",
             "width" : "100%", 
             "top" : "0",
@@ -110,15 +121,10 @@ checkedInput.addEventListener('change', function(){
             "padding-top" : "10px", 
             "padding-bottom" : "20px",
             "transition" : "all 300ms ease",
-            "transform" : "translateX(0)"
+            "transform" : "translateX(0)",
+            "opacity" : "1",
+            "z-index" : "1000"
         })
-    }
-    else{
-        $('.mobile-menu').css({
-            "display" : "none",
-            "top" : "0",
-            "left" : "100%",
-            "transition" : "all 300ms ease",
-        })
+        console.log("not checked")
     }
 })
