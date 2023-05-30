@@ -20,6 +20,66 @@ $(document).ready(function(){
 })
 
 
+var serviceCards = document.getElementsByClassName('service-card');
+var serviceCardsOverlays = document.getElementsByClassName('service-card-overlay');
+console.log(serviceCardsOverlays);
+var serviceCardArray = Array.from(serviceCards);
+var serviceCardsOverlaysArray = Array.from(serviceCardsOverlays);
+
+
+
+serviceCardArray.forEach((serviceCard) => {
+    serviceCard.addEventListener("mouseenter", (event)=>{
+      event.target.lastElementChild.style.height = "0";
+      event.target.lastElementChild.style.transition = "height 0.5s ease-in-out"
+    })
+
+    serviceCard.addEventListener("mouseleave", (event)=> {
+        event.target.lastElementChild.style.height = "90%";
+        event.target.lastElementChild.style.transition = "height 0.5s ease-in-out";
+    })
+})
+
+// var servicesContent = document.getElementsByClassName('services-content')[0];
+// var serviceContentCloned = servicesContent.cloneNode(true);
+// // servicesContent.appendChild(serviceContentCloned.childNodes);
+// console.log(serviceContentCloned.childNodes)
+// // $(windows).onload(function(){
+// //     $('.service-content').css({"translateX" : "200px"})
+// // })
+
+var checkedInput = document.getElementsByClassName('toggle-mMenu')[0];
+console.log(checkedInput);
+checkedInput.addEventListener('change', function(){
+    if(!this.checked){
+        console.log("notchecked");
+        $('.mobile-menu').css({
+            // "display" : "none",
+            "opacity" : "0",
+            "top" : "0",
+            "left" : "0",
+            "transition" : "all 300ms ease",
+            "z-index" : "-2"
+        })
+    }
+    else{
+       $('.mobile-menu').css({
+            "display" : "flex",
+            "width" : "100%", 
+            "top" : "0",
+            "left" : "0",
+            "padding-top" : "10px", 
+            "padding-bottom" : "20px",
+            "transition" : "all 300ms ease",
+            "transform" : "translateX(0)",
+            "opacity" : "1",
+            "z-index" : "1000"
+        })
+        console.log("checked")
+    }
+})
+
+
 
 const mauritius = document.getElementsByClassName("mauritius");
 const singapore = document.getElementsByClassName("singapore");
@@ -70,61 +130,3 @@ southAfrica[0].addEventListener("mouseout", ()=> {
     reverseDestinationOverlay(".south-africa-overlay")
 })
 
-var serviceCards = document.getElementsByClassName('service-card');
-var serviceCardsOverlays = document.getElementsByClassName('service-card-overlay');
-console.log(serviceCardsOverlays);
-var serviceCardArray = Array.from(serviceCards);
-var serviceCardsOverlaysArray = Array.from(serviceCardsOverlays);
-
-
-
-serviceCardArray.forEach((serviceCard) => {
-    serviceCard.addEventListener("mouseenter", (event)=>{
-      event.target.lastElementChild.style.height = "0";
-      event.target.lastElementChild.style.transition = "height 0.5s ease-in-out"
-    })
-
-    serviceCard.addEventListener("mouseleave", (event)=> {
-        event.target.lastElementChild.style.height = "90%";
-        event.target.lastElementChild.style.transition = "height 0.5s ease-in-out";
-    })
-})
-
-// var servicesContent = document.getElementsByClassName('services-content')[0];
-// var serviceContentCloned = servicesContent.cloneNode(true);
-// // servicesContent.appendChild(serviceContentCloned.childNodes);
-// console.log(serviceContentCloned.childNodes)
-// // $(windows).onload(function(){
-// //     $('.service-content').css({"translateX" : "200px"})
-// // })
-
-var checkedInput = document.getElementsByClassName('toggle-mMenu')[0];
-console.log(checkedInput);
-checkedInput.addEventListener('change', function(){
-    if(!this.checked){
-        
-        $('.mobile-menu').css({
-            // "display" : "none",
-            "opacity" : "0",
-            "top" : "0",
-            "left" : "0",
-            "transition" : "all 300ms ease",
-            "z-index" : "-2"
-        })
-    }
-    else{
-       $('.mobile-menu').css({
-            "display" : "flex",
-            "width" : "100%", 
-            "top" : "0",
-            "left" : "0",
-            "padding-top" : "10px", 
-            "padding-bottom" : "20px",
-            "transition" : "all 300ms ease",
-            "transform" : "translateX(0)",
-            "opacity" : "1",
-            "z-index" : "1000"
-        })
-        console.log("not checked")
-    }
-})

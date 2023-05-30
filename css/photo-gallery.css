@@ -57,30 +57,14 @@ section .gallery-list{
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.modal-slideshow .slideshow{
-    margin: auto;
-    display: block;
-    height: 70%;
-    width: 80%;
-    max-width: 700px;
+.image-container{
+    height: 50%;
 }
 
-.slideshow{
-    animation-name: scale-slideshow;
-    animation-duration: 0.6s;
-}
-
-.swiper{
-    width: 90%;
-    height: 50% !important;
-}
-
-.swiper-slide img{
-    width: 100%;
+.big-photo{
     height: 100%;
-    object-fit: cover;
-    cursor: pointer;
 }
+
 
 @keyframes scale-slideshow{
     from{
@@ -105,4 +89,10 @@ section .gallery-list{
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    section{
+        height: fit-content;
+    }
 }
