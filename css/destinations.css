@@ -310,6 +310,10 @@ body{
 
 @media screen and (max-width: 768px){
 
+    html,body{
+        overflow-x: hidden !important;
+    }
+
     .mobile-menu-hamburger{
         display: grid;
         place-items: center;
@@ -387,7 +391,7 @@ body{
         padding-top: 10px;
         padding-bottom: 20px; */
         top: 0;
-        left: 100%
+        /* left: 100% */
     }
 
     .mobile-menu ul{

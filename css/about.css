@@ -1,0 +1,14 @@
+section{
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+section article.content{
+    padding: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+}

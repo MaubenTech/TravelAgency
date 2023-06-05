@@ -592,9 +592,8 @@ section.our-services{
 
 @media screen and (max-width: 768px){
 
-    body{
+    html,body{
         overflow-x: hidden !important;
-        margin: 0;
     }
 
     .header{
@@ -614,12 +613,16 @@ section.our-services{
     }
 
     .logo{
-        height: 70%;
+        height: 60%;
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
     }
 
     .logo img{
         height: 100% !important;
-        width: 100% !important
+        width: 45% !important
     }
     .mainMenu{
         display: none;
@@ -660,7 +663,7 @@ section.our-services{
         height: 4px;
         margin-bottom: 5px;
         /* position: relative; */
-        background-color: black;
+        background-color: white;
         z-index: 10000;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
@@ -778,12 +781,15 @@ section.our-services{
   
     .previous-destinations-container{
         height: fit-content;
+        margin-bottom: 80px;
     }
 
     .previous-destinations{
         display: flex;
         margin-left: 4% !important;
         margin-right: 4% !important;
+        height: 100%;
+        justify-content: space-around;
     }
 
     .destination-title{
@@ -799,8 +805,8 @@ section.our-services{
     }
 
     .destinations{
-
     }
+
 
     .firstTwo-destinations{
         display: flex;
@@ -830,12 +836,25 @@ section.our-services{
     .firstThree-destinations > *{
         width: 100%;
         margin-top: 10px;
+        margin-bottom: 0 !important;
     }
+
+    .destination-request-booking{
+        height: 40%;
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+
+    .dest{
+        height: 100% !important;
+    }
+
     .next-holiday{
         display: flex;
         flex-direction: column;
         margin-left: 7%;
         margin-right: 7%;
+        margin-top: 7%;
         justify-content: space-between;
         height: 750px;
         padding: 30px 0;

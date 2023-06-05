@@ -15,7 +15,7 @@ class Header extends HTMLElement{
                         <div class="mainMenu">
                             <ul>
                                 <li><a href="/index.html">Home</a></li>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="/html/about-us.html">About Us</a></li>
                                 <li><a href="/html/photo-gallery.html">Photo Gallery</a></li>
                                 <li><a href="/html/destinations.html">Destinations</a></li>
                             </ul>
