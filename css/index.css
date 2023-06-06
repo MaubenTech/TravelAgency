@@ -628,7 +628,51 @@ section.our-services{
         display: none;
     }
     .account{
+        display: block;
+        width: 30%;
+    }
+
+    .signUp{
+        width: 100%;
+    }
+
+    #requestBooking{
+        height: 80%;
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .form-section{
+        width: 100%;
+    }
+
+    .booking-form{
+        width: 90%;
+    }
+
+    .booking-form .left-pane{
+        width: 10%;
+    }
+
+    .booking-form .left-pane img{
         display: none;
+    }
+
+    .booking-form .right-pane{
+        width: 90%;
+    }
+    
+    .form-popup-body{
+        width: 80%;
+    }
+
+    .form-popup{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .form-popup .exit-form-area-button{
+        color: black;
     }
 
     .mobile-menu-hamburger{
@@ -696,7 +740,7 @@ section.our-services{
 
     .mobile-menu{
         display: none;
-        height: 70%;
+        height: 80% !important;
         /* height: 0; */
         /* transform: translateX(420px); */
         transition: all 300ms ease;
@@ -718,12 +762,12 @@ section.our-services{
         justify-content: space-between;
         align-items: left;
         padding: 0;
-        margin-top: 35%;
+        margin-top: 30%;
     }
 
     .mobile-menu ul li{
         list-style-type: none;
-        padding: 10px;
+        padding: 5px;
         justify-self: center;
     }
 
@@ -781,7 +825,7 @@ section.our-services{
   
     .previous-destinations-container{
         height: fit-content;
-        margin-bottom: 80px;
+        margin-bottom: 20px;
     }
 
     .previous-destinations{
@@ -794,6 +838,7 @@ section.our-services{
 
     .destination-title{
         width: 100%;
+        height: 10%;
     }
 
     .top-destination-title{
@@ -805,6 +850,7 @@ section.our-services{
     }
 
     .destinations{
+        height: 50%;
     }
 
 
@@ -840,13 +886,23 @@ section.our-services{
     }
 
     .destination-request-booking{
-        height: 40%;
-        margin-top: 0;
-        margin-bottom: 100px;
+        height: 10% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
     }
 
     .dest{
-        height: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        height: 100%;
+    }
+
+    .discover{
+        position: static;
     }
 
     .next-holiday{
@@ -854,9 +910,9 @@ section.our-services{
         flex-direction: column;
         margin-left: 7%;
         margin-right: 7%;
-        margin-top: 7%;
+        margin-top: 0;
         justify-content: space-between;
-        height: 750px;
+        height: 100vh;
         padding: 30px 0;
     }
 

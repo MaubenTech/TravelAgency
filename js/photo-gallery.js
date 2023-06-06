@@ -3,7 +3,7 @@ const photoJson = '/js/photo-gallery.json';
 
 
 
-function displayPhotos(data) {
+const displayPhotos = (data) => {
     var photoList = document.getElementById('gallery-list');
     for (var i = 0; i < data.length; i++) {
 
@@ -32,7 +32,7 @@ fetch(photoJson, {
     displayBigPhoto(response);
 }).catch(error => console.log(error));
 
-function displayBigPhoto(data){
+function displayBigPhoto (data){
     var photoWeb = document.getElementsByClassName('photo');
     console.log(photoWeb)
 
@@ -58,10 +58,82 @@ function displayBigPhoto(data){
     })
 
     var closeButton = document.getElementsByClassName('close-slideshow')[0];
-    closeButton.onclick = function () {
+    closeButton.addEventListener("click", () => {
         imageContainer.innerHTML = '';
         modal.style.display = "none";
-    }
+    })
+    // closeButton.onclick =  ()=>  {
+       
+    // }
 }
 
 
+const paginationNumbers = document.getElementById("pagination-numbers");
+const galleryList = document.getElementById("gallery-list");
+const listItems = galleryList.querySelectorAll("li");
+const nextButton = document.getElementById("next-button");
+const previousButton = document.getElementById("prev-button");
+
+const paginationLimit = 10;
+const pageCount = Math.ceil(listItems.length / paginationLimit);
+let currentPage;
+
+
+const appendPageNumber = (index) => {
+    const pageNumber = document.createElement("button");
+    pageNumber.className = "pagination-number";
+    pageNumber.innerHTML = index;
+    pageNumber.setAttribute("page-index", index);
+    pageNumber.setAttribute("aria-label", "Page" + index);
+
+    paginationNumbers.appendChild(pageNumber);
+};
+
+const getPaginationNumbers = () => {
+    for (let i = 1; i < pageCount; i++) {
+        appendPageNumber(i);
+    }
+};
+
+const handleActivePageNumber = () => {
+    document.querySelectorAll(".pagination-number").forEach(button => {
+        button.classList.remove("active");
+        
+        const pageIndex = Number(button.getAttribute("page-index"));
+        if (pageIndex == currentPage) {
+            button.classList.add("active");
+        }
+    })
+}
+
+const setCurrentPage = (pageNumber) => {
+    currentPage = pageNumber;
+
+    handleActivePageNumber();
+
+    const previousRange = (pageNumber - 1) * paginationLimit;
+    const currentRange = pageNumber * paginationLimit;
+
+    listItems.forEach((item, index) => {
+        item.classList.add("hidden");
+        if (index >= previousRange && index < currentRange) {
+            item.classList.remove("hidden");
+        }
+    })
+};
+
+
+window.addEventListener('load', () => {
+    getPaginationNumbers();
+    setCurrentPage(1);
+    
+    document.querySelectorAll(".pagination-number").forEach(button => {
+        const pageIndex = Number(button.getAttribute("page-index"));
+        
+        if (pageIndex) {
+            button.addEventListener("click", () => {
+                setCurrentPage(pageIndex);
+            })
+        }
+    })
+});

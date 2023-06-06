@@ -1,3 +1,5 @@
+
+
 [
     {
         "image" : "/images/photo-gallery/bali.jpg"
@@ -9,5 +11,17 @@
 
     {
         "image" : "/images/photo-gallery/sweden-papers.jpg"
+    },
+    
+    {
+        "image" : "/images/photo-gallery/IMG_2493.jpg"
+    },
+
+    {
+        "image" : "/images/photo-gallery/IMG_2509.jpg"
+    },
+    
+    {
+        "image" : "/images/photo-gallery/IMG_2505.jpg"
     }
 ]
