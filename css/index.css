@@ -4,6 +4,15 @@ body{
     content-visibility: auto;
 }
 
+#preloader{
+    background: #fff url(/images/spinner.gif) center center no-repeat;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100000000;
+}
+
 /* Slider typeshit */
 .hero{
     font-family:"Roboto", Arial, Verdana, Helvetica, sans-serif;
