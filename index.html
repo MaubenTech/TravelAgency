@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="https://content.r9cdn.net/res/css/font/tt-hoves/tt-hoves-variable.woff2?v=8664191c7b8cab2e3fc042680118a009031da15d&cluster=5" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload"
+        href="https://content.r9cdn.net/res/css/font/tt-hoves/tt-hoves-variable.woff2?v=8664191c7b8cab2e3fc042680118a009031da15d&cluster=5"
+        as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/form.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
     <link rel="stylesheet" href="/css/swiper-bundle.css">
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <!-- <script src="/js/footer.js"></script> -->
     <title>EGG Global </title>
     <script src="js/explore-window.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- <script src="/js/header.js"></script> -->
     <my-header></my-header>
-    
+
 </head>
 <script>
     var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?68910';
@@ -28,61 +33,62 @@
     s.async = true;
     s.src = url;
     var options = {
-  "enabled":true,
-  "chatButtonSetting":{
-      "backgroundColor":"#4dc247",
-      "ctaText":"",
-      "borderRadius":"25",
-      "marginLeft":"0",
-      "marginBottom":"50",
-      "marginRight":"50",
-      "position":"right"
-  },
-  "brandSetting":{
-      "brandName":"EG Global Travel",
-      "brandSubTitle":"Typically replies within a day",
-      "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
-      "welcomeText":"Hi there!\nHow can I help you?",
-      "messageText":"Hello, I have a question about {{page_link}}",
-      "backgroundColor":"#0a5f54",
-      "ctaText":"Start Chat",
-      "borderRadius":"25",
-      "autoShow":false,
-      "phoneNumber":"2348064520518"
-  }
-};
-    s.onload = function() {
+        "enabled": true,
+        "chatButtonSetting": {
+            "backgroundColor": "#4dc247",
+            "ctaText": "",
+            "borderRadius": "25",
+            "marginLeft": "0",
+            "marginBottom": "50",
+            "marginRight": "50",
+            "position": "right"
+        },
+        "brandSetting": {
+            "brandName": "EG Global Travel",
+            "brandSubTitle": "Typically replies within a day",
+            "brandImg": "https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+            "welcomeText": "Hi there!\nHow can I help you?",
+            "messageText": "Hello, I have a question about {{page_link}}",
+            "backgroundColor": "#0a5f54",
+            "ctaText": "Start Chat",
+            "borderRadius": "25",
+            "autoShow": false,
+            "phoneNumber": "2348064520518"
+        }
+    };
+    s.onload = function () {
         CreateWhatsappChatWidget(options);
     };
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
 </script>
+
 <body id="body">
-    <div id="preloader"></div>
+    <div id="preloader" class="preloader"></div>
     <div>
         <section class="hero">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide hero-slides">
-                    <div class="heros"></div>
-                    <h2 class="carousel-title">EG GLOBAL SERVICE</h2>
-                    <p class="taking">Taking you to your destinations!</p>
-                    <img src="images/hero3-unsplash.jpg" alt="">
-                </div>
-                <div class="swiper-slide hero-slides">
-                    <div class="heros"></div>
-                    <h2 class="carousel-title">EG GLOBAL SERVICE</h2>
-                    <p class="taking">Taking you to your destinations!</p>
-                    <img src="images/hero5-unsplash.jpg" alt="">
-                </div>
-                <div class="swiper-slide hero-slides">
-                    <div class="heros"></div>
-                    <h2 class="carousel-title">EG GLOBAL SERVICE</h2>
-                    <p class="taking">Taking you to your destinations!</p>
-                    <img src="images/buildings-unsplash.jpg" alt="">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hero-slides">
+                        <div class="heros"></div>
+                        <h2 class="carousel-title">EG GLOBAL SERVICE</h2>
+                        <p class="taking">Taking you to your destinations!</p>
+                        <img src="images/hero3-unsplash.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide hero-slides">
+                        <div class="heros"></div>
+                        <h2 class="carousel-title">EG GLOBAL SERVICE</h2>
+                        <p class="taking">Taking you to your destinations!</p>
+                        <img src="images/hero5-unsplash.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide hero-slides">
+                        <div class="heros"></div>
+                        <h2 class="carousel-title">EG GLOBAL SERVICE</h2>
+                        <p class="taking">Taking you to your destinations!</p>
+                        <img src="images/buildings-unsplash.jpg" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
         <!-- <section class="observable-area"></section> -->
         <section class="what-egg-brings">
@@ -104,7 +110,7 @@
                     <h3>Book With Flexibility</h3>
                     <p>You will have no hassle booking and preparing your flights with us</p>
                 </div>
-                <div class="feature ft1" id="ft1" >
+                <div class="feature ft1" id="ft1">
                     <div class="feature-icon-container">
                         <i class="fas fa-dollar-sign"></i>
                     </div>
@@ -141,7 +147,8 @@
                         <div class="service-card-overlay"></div>
                     </div>
                     <div class="service-card">
-                        <img src="/images/services/denys-nevozhai-D8iZPlX-2fs-unsplash.jpg" alt="" srcset="" class="service-img" loading="lazy">
+                        <img src="/images/services/denys-nevozhai-D8iZPlX-2fs-unsplash.jpg" alt="" srcset=""
+                            class="service-img" loading="lazy">
                         <div class="service-description">Honeymoons and Vacations</div>
                         <div class="service-card-overlay"></div>
                     </div>
@@ -207,7 +214,7 @@
                     <h4>KEEP IN TOUCH</h4>
                     <h3>TRAVEL WITH US</h3>
                 </div>
-                <form class="email-address" >
+                <form class="email-address">
                     <input type="email" name="" id="newsletter-field" placeholder="Enter your email address here">
                     <a href="" class="submit-newsletter-application">Send</a>
                 </form>
@@ -218,7 +225,7 @@
     <my-form></my-form>
     <my-footer></my-footer>
     <script>
-       
+
     </script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script src="/js/swiper-bundle.js"></script>
@@ -228,4 +235,5 @@
     <script src="/js/request-booking.js"></script>
     <script src="/js/intersectionObserver.js"></script>
 </body>
+
 </html>
