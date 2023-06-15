@@ -149,7 +149,7 @@ section.our-services{
     flex-direction: column;
     margin-left: 143px;
     margin-right: 143px;
-    transform: translateX(-90%);
+    transform: translateX(180%);
     opacity: 0.2;
     transition: all 1s linear;
 }
