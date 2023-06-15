@@ -12,12 +12,12 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
     <link rel="stylesheet" href="/css/swiper-bundle.css">
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script src="/js/footer.js"></script>
+    <!-- <script src="/js/footer.js"></script> -->
     <title>EGG Global </title>
     <script src="js/explore-window.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="/js/header.js"></script>
+    <!-- <script src="/js/header.js"></script> -->
     <my-header></my-header>
     
 </head>
@@ -57,9 +57,10 @@
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
 </script>
-<body>
+<body id="body">
     <div id="preloader"></div>
-    <section class="hero">
+    <div>
+        <section class="hero">
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide hero-slides">
@@ -82,153 +83,142 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- <section class="observable-area"></section> -->
-    <section class="what-egg-brings">
-        <div class="section-header">
-            <h2>What EG Global Services Brings To The Table</h2>
-        </div>
-        <div class="section-content">
-            <div class="feature">
-                <div class="feature-icon-container">
-                    <i class="fas fa-tag"></i>
-                </div>
-                <h3>Great Deals</h3>
-                <p>Get the best packages with us</p>
+        </section>
+        <!-- <section class="observable-area"></section> -->
+        <section class="what-egg-brings">
+            <div class="section-header">
+                <h2>What EG Global Services Brings To The Table</h2>
             </div>
-            <div class="feature">
-                <div class="feature-icon-container">
-                    <i class="fas fa-sync"></i>
+            <div class="section-content">
+                <div class="feature">
+                    <div class="feature-icon-container">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>Great Deals</h3>
+                    <p>Get the best packages with us</p>
                 </div>
-                <h3>Book With Flexibility</h3>
-                <p>You will have no hassle booking and preparing your flights with us</p>
-            </div>
-            <div class="feature ft1" id="ft1" >
-                <div class="feature-icon-container">
-                    <i class="fas fa-dollar-sign"></i>
+                <div class="feature">
+                    <div class="feature-icon-container">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>Book With Flexibility</h3>
+                    <p>You will have no hassle booking and preparing your flights with us</p>
                 </div>
-                <h3>Track your prices</h3>
-                <p>You can Contact us to get alerts for when prices drop</p>
-            </div>
-            <div class="feature" id="ft2">
-                <div class="feature-icon-container">
-                    <i class="fas fa-map-marker"></i>
+                <div class="feature ft1" id="ft1" >
+                    <div class="feature-icon-container">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Track your prices</h3>
+                    <p>You can Contact us to get alerts for when prices drop</p>
                 </div>
-                <h3>Pocket Friendly Flights</h3>
-            </div>
-        </div>
-    </section>
-    <section class="our-services">
-        <div class="services-header">
-            <h2>Our Services</h2>
-        </div>
-        <div class="services-content-container">
-            <div class="services-content">
-                <div class="service-card">
-                    <img src="/images/services/car-hiring.jpg" alt="" srcset="" class="service-img" loading="lazy">
-                    <div class="service-description">Car Hiring Services</div>
-                    <div class="service-card-overlay"></div>
-                </div>
-                <div class="service-card">
-                    <img src="/images/services/passport.jpg" alt="" srcset="" class="service-img" loading="lazy">
-                    <div class="service-description">Visa Processing & Travel Assistance</div>
-                    <div class="service-card-overlay"></div>
-                </div>
-                <div class="service-card">
-                    <img src="/images/services/hotel.jpg" alt="" srcset="" class="service-img" loading="lazy">
-                    <div class="service-description">Worldwide Hotel Booking</div>
-                    <div class="service-card-overlay"></div>
-                </div>
-                <div class="service-card">
-                    <img src="/images/services/denys-nevozhai-D8iZPlX-2fs-unsplash.jpg" alt="" srcset="" class="service-img" loading="lazy">
-                    <div class="service-description">Honeymoons and Vacations</div>
-                    <div class="service-card-overlay"></div>
-                </div>
-                <div class="service-card">
-                    <img src="/images/services/flight.jpg" alt="" srcset="" class="service-img" loading="lazy">
-                    <div class="service-description">Local & Internation Flight Booking</div>
-                    <div class="service-card-overlay"></div>
+                <div class="feature" id="ft2">
+                    <div class="feature-icon-container">
+                        <i class="fas fa-map-marker"></i>
+                    </div>
+                    <h3>Pocket Friendly Flights</h3>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="previous-destinations-container">
-        <div class="previous-destinations">
-            <div class="destination-title">
-                <div class="top-destination-title">
-                    <!-- <h3 id="previous-p">Popular Destinations</h3> -->
-                    <h2 id="destinations-p"><strong>Top</strong> Destinations</h3>
+        </section>
+        <section class="our-services">
+            <div class="services-header">
+                <h2>Our Services</h2>
+            </div>
+            <div class="services-content-container">
+                <div class="services-content">
+                    <div class="service-card">
+                        <img src="/images/services/car-hiring.jpg" alt="" srcset="" class="service-img" loading="lazy">
+                        <div class="service-description">Car Hiring Services</div>
+                        <div class="service-card-overlay"></div>
+                    </div>
+                    <div class="service-card">
+                        <img src="/images/services/passport.jpg" alt="" srcset="" class="service-img" loading="lazy">
+                        <div class="service-description">Visa Processing & Travel Assistance</div>
+                        <div class="service-card-overlay"></div>
+                    </div>
+                    <div class="service-card">
+                        <img src="/images/services/hotel.jpg" alt="" srcset="" class="service-img" loading="lazy">
+                        <div class="service-description">Worldwide Hotel Booking</div>
+                        <div class="service-card-overlay"></div>
+                    </div>
+                    <div class="service-card">
+                        <img src="/images/services/denys-nevozhai-D8iZPlX-2fs-unsplash.jpg" alt="" srcset="" class="service-img" loading="lazy">
+                        <div class="service-description">Honeymoons and Vacations</div>
+                        <div class="service-card-overlay"></div>
+                    </div>
+                    <div class="service-card">
+                        <img src="/images/services/flight.jpg" alt="" srcset="" class="service-img" loading="lazy">
+                        <div class="service-description">Local & Internation Flight Booking</div>
+                        <div class="service-card-overlay"></div>
+                    </div>
                 </div>
             </div>
-            <div class="destinations" id="travel-destinations">
-                <div class="firstTwo-destinations">
-                    <div class="mauritius" id="mauritius">
-                        <div class="mauritius-overlay">
+        </section>
+        <section class="previous-destinations-container">
+            <div class="previous-destinations">
+                <div class="destination-title">
+                    <div class="top-destination-title">
+                        <!-- <h3 id="previous-p">Popular Destinations</h3> -->
+                        <h2 id="destinations-p"><strong>Top</strong> Destinations</h3>
+                    </div>
+                </div>
+                <div class="destinations" id="travel-destinations">
+                    <div class="firstTwo-destinations">
+                        <div class="mauritius" id="mauritius">
+                            <div class="mauritius-overlay">
+                            </div>
+                            <h2>Mauritius</h2>
                         </div>
-                        <h2>Mauritius</h2>
-                    </div>
-                    <div class="singapore">
-                        <div class="singapore-overlay">
+                        <div class="singapore">
+                            <div class="singapore-overlay">
+                            </div>
+                            <h2>Singapore</h2>
                         </div>
-                        <h2>Singapore</h2>
+                    </div>
+                    <div class="firstThree-destinations">
+                        <div class="egypt">
+                            <div class="egypt-overlay"></div>
+                            <h2>Egypt</h2>
+                        </div>
+                        <div class="london">
+                            <div class="london-overlay"></div>
+                            <h2>London</h2>
+                        </div>
+                        <div class="south-africa">
+                            <div class="south-africa-overlay"></div>
+                            <h2>South Africa</h2>
+                        </div>
                     </div>
                 </div>
-                <div class="firstThree-destinations">
-                    <div class="egypt">
-                        <div class="egypt-overlay"></div>
-                        <h2>Egypt</h2>
-                    </div>
-                    <div class="london">
-                        <div class="london-overlay"></div>
-                        <h2>London</h2>
-                    </div>
-                    <div class="south-africa">
-                        <div class="south-africa-overlay"></div>
-                        <h2>South Africa</h2>
+                <div class="destination-request-booking">
+                    <div class="dest">
+                        <a href="request-booking.html" class="discover">Discover</a>
                     </div>
                 </div>
             </div>
-            <div class="destination-request-booking">
-                <div class="dest">
-                    <a href="request-booking.html" class="discover">Discover</a>
+        </section>
+        <section class="next-holiday">
+            <div class="holiday">
+                <h2>Your Next Holiday</h2>
+                <a href="" class="packages-link">View All Packages</a>
+                <div class="next-holiday-overlay"></div>
+            </div>
+            <div class="travel-with-us">
+                <div class="trheader">
+                    <h4>KEEP IN TOUCH</h4>
+                    <h3>TRAVEL WITH US</h3>
                 </div>
+                <form class="email-address" >
+                    <input type="email" name="" id="newsletter-field" placeholder="Enter your email address here">
+                    <a href="" class="submit-newsletter-application">Send</a>
+                </form>
+                <div class="travel-with-us-overlay"></div>
             </div>
-        </div>
-    </section>
-    <section class="next-holiday">
-        <div class="holiday">
-            <h2>Your Next Holiday</h2>
-            <a href="" class="packages-link">View All Packages</a>
-            <div class="next-holiday-overlay"></div>
-        </div>
-        <div class="travel-with-us">
-            <div class="trheader">
-                <h4>KEEP IN TOUCH</h4>
-                <h3>TRAVEL WITH US</h3>
-            </div>
-            <form class="email-address" >
-                <input type="email" name="" id="newsletter-field" placeholder="Enter your email address here">
-                <a href="" class="submit-newsletter-application">Send</a>
-            </form>
-            <div class="travel-with-us-overlay"></div>
-        </div>
-    </section>
-    
+        </section>
+    </div>
     <my-form></my-form>
     <my-footer></my-footer>
     <script>
-        var preloader = document.getElementById('preloader');
-        window.addEventListener("load", ()=> {
-
-            setTimeout(setPreloaderInactive, 5000)
-            function setPreloaderInactive(){
-                preloader.classList.add("inactive");
-            }
-
-            preloader.addEventListener("transitionend", ()=> {
-                document.body.removeChild("preloader")
-            })
-        })
+       
     </script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script src="/js/swiper-bundle.js"></script>
