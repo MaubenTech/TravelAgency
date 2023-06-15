@@ -149,8 +149,8 @@ section.our-services{
     flex-direction: column;
     margin-left: 143px;
     margin-right: 143px;
-    transform: translateX(180%);
-    opacity: 0;
+    /* transform: translateX(120%); */
+    /* opacity: 0; */
     transition: all 1s linear;
 }
 
