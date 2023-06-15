@@ -219,7 +219,11 @@
     <script>
         var preloader = document.getElementById('preloader');
         window.addEventListener("load", ()=> {
-            preloader.classList.add("inactive");
+
+            setTimeout(setPreloaderInactive, 5000)
+            function setPreloaderInactive(){
+                preloader.classList.add("inactive");
+            }
 
             preloader.addEventListener("transitionend", ()=> {
                 document.body.removeChild("preloader")
