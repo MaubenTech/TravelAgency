@@ -101,34 +101,34 @@ class Form extends HTMLElement{
 customElements.define("my-form", Form)
 
 var customSelect = document.getElementsByClassName('custom-select');
-console.log(customSelect);
-console.log(customSelect.length);
+// console.log(customSelect);
+// console.log(customSelect.length);
 
 for(i = 0; i < customSelect.length; i++){
     selectMenu = customSelect[i].getElementsByTagName('select')[0];
-    console.log(selectMenu);
+    // console.log(selectMenu);
 
     selectM = selectMenu.length
-    console.log(selectM);
+    // console.log(selectM);
 
     selectedOption = document.createElement('div');
     selectedOption.setAttribute("class", "select-selected");
-    console.log(selectedOption);
+    // console.log(selectedOption);
 
     selectedOption.innerHTML = selectMenu.options[selectMenu.selectedIndex].innerHTML;
-    console.log(selectedOption);
+    // console.log(selectedOption);
 
     customSelect[i].appendChild(selectedOption);
-    console.log(customSelect[i].appendChild(selectedOption));
+    // console.log(customSelect[i].appendChild(selectedOption));
 
     optionList = document.createElement("div");
     optionList.setAttribute("class", "select-items select-hide");
-    console.log(optionList);
+    // console.log(optionList);
 
     for(j = 1; j < selectMenu.length; j++){
         eachOption = document.createElement("div");
         eachOption.innerHTML = selectMenu.options[j].innerHTML;
-        console.log(eachOption);
+        // console.log(eachOption);
 
         eachOption.addEventListener("click", function(event){
             //when an option is clicked, update the original selected box and the
@@ -158,8 +158,8 @@ for(i = 0; i < customSelect.length; i++){
         event.stopPropagation();
         closeAllSelect(this);
 
-        console.log(selectedOption)
-        console.log(this.nextSibling)
+        // console.log(selectedOption)
+        // console.log(this.nextSibling)
 
         this.nextSibling.classList.toggle("select-hide");
         this.classList.toggle("select-arrow-active");
@@ -185,13 +185,13 @@ function closeAllSelect(element){
             itemsToSelect[i].classList.add("select-hide");
         }
     }
-    console.log(element)
+    // console.log(element)
 }
 
 //click outside the box, the following should happen
 
 var bookingForm = document.getElementById("booking-form")
-console.log(bookingForm);
+// console.log(bookingForm);
 bookingForm.addEventListener("click", closeAllSelect);
 
 

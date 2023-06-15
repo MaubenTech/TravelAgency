@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /* position: relative; */
+    content-visibility: auto;
 }
 
 /* Slider typeshit */
@@ -37,6 +37,16 @@ body{
     object-fit: cover;
 }
 
+.observable-area{
+    position: sticky;
+    top: 300px;
+    right: 0;
+    height: 200px;
+    left: 0;
+    z-index: 20000000;
+    background-color: red;
+}
+
 .carousel-title{
     position: absolute;
     bottom: 2100px;
@@ -68,7 +78,20 @@ body{
     height: fit-content;
     margin-left: 7%;
     margin-right: 7%;
+    transform: translateX(-90%);
+    opacity: 0;
+    transition: all 0.5ms linear;
 }
+
+.what-egg-brings.active{
+    margin-left: 7%;
+    margin-right: 7%;
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 0.5ms linear;
+}
+
+.what-egg-brings
 
 .section-header{
     color: #05833F;
@@ -79,6 +102,8 @@ body{
     grid-template-columns: auto auto;
     row-gap: 20px;
 }
+
+
 
 #ft1 {
     margin-left: 18%;
@@ -124,6 +149,14 @@ section.our-services{
     flex-direction: column;
     margin-left: 143px;
     margin-right: 143px;
+    transform: translateX(-90%);
+    opacity: 0.2;
+    transition: transform 0.5ms linear;
+}
+
+section.our-services.active{
+    opacity: 1;
+    transform: translateX(0) !important;
 }
 
 .services-header{
@@ -131,7 +164,9 @@ section.our-services{
     place-items: center;
     height: 10%;
     margin-bottom: 50px;
+   
 }
+
 
 .services-content-container{
     height: 90%;
@@ -215,6 +250,14 @@ section.our-services{
     padding-top: 10px;
     margin-top: 60px;
     width: 100%;
+    transform: translateX(-90%);
+    opacity: 0;
+    transition: all 0.5ms linear;
+}
+
+.previous-destinations-container.active{
+    opacity: 1;
+    transform: translateX(0) !important;
 }
 
 .previous-destinations{
@@ -428,6 +471,14 @@ section.our-services{
     padding: 2%;
     border-radius: 25px;
     position: relative;
+    transform: translateX(-90%);
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+.next-holiday.active{
+    opacity: 1;
+    transform: translateX(0) !important;
 }
 
 .holiday{

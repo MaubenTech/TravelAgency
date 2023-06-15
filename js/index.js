@@ -49,10 +49,10 @@ serviceCardArray.forEach((serviceCard) => {
 // // })
 
 var checkedInput = document.getElementsByClassName('toggle-mMenu')[0];
-console.log(checkedInput);
+// console.log(checkedInput);
 checkedInput.addEventListener('change', function(){
     if(!this.checked){
-        console.log("notchecked");
+        // console.log("notchecked");
         $('.mobile-menu').css({
             // "display" : "none",
             "opacity" : "0",
@@ -75,7 +75,7 @@ checkedInput.addEventListener('change', function(){
             "opacity" : "1",
             "z-index" : "1000"
         })
-        console.log("checked")
+        // console.log("checked")
     }
 })
 
@@ -88,7 +88,7 @@ const london = document.getElementsByClassName("london");
 const southAfrica = document.getElementsByClassName("south-africa");
 
 function destinationOverlay(element){
-    console.log(element);
+    // console.log(element);
     $(element).css("height", "0%");
     $(element).css("transition", "height 0.5s ease-in-out");
 
