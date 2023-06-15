@@ -216,6 +216,16 @@
     
     <my-form></my-form>
     <my-footer></my-footer>
+    <script>
+        var preloader = document.getElementById('preloader');
+        window.addEventListener("load", ()=> {
+            preloader.classList.add("inactive");
+
+            preloader.addEventListener("transitionend", ()=> {
+                document.body.removeChild("preloader")
+            })
+        })
+    </script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script src="/js/swiper-bundle.js"></script>
     <script src="js/slider.js"></script>
