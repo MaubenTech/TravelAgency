@@ -3,9 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let options = {
         root: null,
         // rootMargin: "0px 0px -300px 0px",
-        rootMargin: "-300px 0px",
+        // rootMargin: "-300px 0px",
+        rootMargin: "-200px 0px",
         // rootMargin: "0px",
-        threshold: 0.002
+        // threshold: 0.002
+        threshold: 0
     };
 
     let observer = new IntersectionObserver(intersectionEntLeaves, options);
@@ -27,6 +29,7 @@ function intersectionEntLeaves(elements, observer) {
             element.target.classList.add('active');
             observer.unobserve(element.target)
         }
+       
     })
 }
 
