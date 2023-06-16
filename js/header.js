@@ -25,7 +25,9 @@ class Header extends HTMLElement{
                                 <a href="" class="signInBtn">Sign In</a>
                             </div> -->
                             <div class="signUp">
-                                <button id="requestBooking" class="signUpBtn">REQUEST A BOOKING</button>
+                                <button id="requestBooking" class="signUpBtn">
+                                    REQUEST A BOOKING
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -12,6 +12,7 @@ const displayPhotos = (data) => {
         li.appendChild(figure);
         var img = document.createElement('img');
         img.classList.add('photo');
+        img.setAttribute("loading", "lazy")
         img.src = data[i].image;
         figure.appendChild(img)
         photoList.appendChild(li);

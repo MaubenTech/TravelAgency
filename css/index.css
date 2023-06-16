@@ -1,11 +1,9 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-body.visible{
-    content-visibility: auto;   
-}
 
 #preloader{
     /* display: none ; */
@@ -536,7 +534,7 @@ section.our-services.active{
 
 .holiday{
     min-height: 60%;
-    background-image: url('../images/tanzania.jpg');
+    background-image: url('/images/tanzania.jpg');
     object-fit: cover;
     background-size: cover;
     background-attachment: fixed;
@@ -549,6 +547,7 @@ section.our-services.active{
     align-items: center;
     color: white;
     position: relative;
+    image-resolution: 200dpi;
 }
 
 .next-holiday-overlay{
@@ -1022,6 +1021,8 @@ section.our-services.active{
 
     .holiday{
         height: 60%;
+        background-image: url('/images/tanzania.jpg');
+        object-fit: cover;
     }
 
     .holiday h2{
