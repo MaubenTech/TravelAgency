@@ -559,10 +559,10 @@ section.our-services.active {
     min-height: 60%;
     background-image: url('/images/tanzania.jpg');
     object-fit: cover;
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
-    /* background-position: cover; */
-    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
