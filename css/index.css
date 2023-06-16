@@ -358,20 +358,23 @@ section.our-services.active{
 .mauritius, .singapore{
     min-height: 1px;
     height: 500px;
-    width: 49%;
+    min-width: 49%;
     background-image: url('../images/focus-photography-mauritius-wVuRAom5v6U-unsplash.jpg');
     background-size: cover;
     border-radius: 20px;
     position: relative;
     cursor: pointer;
+    image-orientation: 50dpi;
 }
 
 .mauritius{
     background-image: url('../images/mauritius-unsplash.jpg');
+    image-orientation: 50dpi;
 }
 
 .singapore{
     background-image: url('../images/singapore\ unsplash.jpg');
+    image-orientation: 50dpi;
 }
 
 .mauritius h2, .singapore h2, .egypt h2, .london h2, .south-africa h2{
@@ -415,14 +418,17 @@ section.our-services.active{
 
 .egypt{
     background-image: url('../images/egypt\ unsplash.jpg');
+    max-width: 100%;
 }
 
 .london{
     background-image: url('../images/london.jpg');
+    max-width: 100%;
 }
 
 .south-africa{
     background-image: url('../images/southafrica-unsplash.jpg');
+    max-width: 100%;
 }
 
 .egypt h2, .london h2, .south-africa h2{
