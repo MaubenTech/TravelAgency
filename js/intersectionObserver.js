@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 })
 
-function intersectionEntLeaves(elements) {
+function intersectionEntLeaves(elements, observer) {
     //all elements that is observed by the observer.
     elements.forEach(element => {
         if (element.isIntersecting) {
@@ -25,9 +25,7 @@ function intersectionEntLeaves(elements) {
             // console.log(element.time, element.intersectionRatio);
             // console.log(element.target.classList);
             element.target.classList.add('active');
-        }
-        else {
-            console.log("e no dey intersect");
+            observer.unobserve(element.target)
         }
     })
 }
